@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Route T Deluxe — Turkey Travel Sales Funnel | Discover Group</title>
+<meta name="description" content="Route T Deluxe: 11 Days / 8 Nights Turkey Tour — Istanbul, Çanakkale, Pergamon, Kuşadası, Pamukkale, Konya, Cappadocia, Ankara, Bolu. Starting at ₱120,000/head with flexible payment options.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #003e8f;
+  --primary-dark: #002d6b;
+  --primary-light: #1565c0;
+  --accent: #e6ad00;
+  --accent-light: #f5c518;
+  --accent-gradient: linear-gradient(135deg, #fde68a, #fcd34d, #f59e0b);
+  --bg: #f8faff;
+  --card: #ffffff;
+  --text-light: #ffffff;
+  --text-dark: #1a1a2e;
+  --text-body: #003e8f;
+  --muted: #6b7a94;
+  --muted-light: rgba(255,255,255,0.7);
+  --border: #e8edf5;
+  --border-light: rgba(255,255,255,0.15);
+  --radius: 0.75rem;
+  --shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text-body); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+.text-gradient-gold { background: linear-gradient(135deg, #fde68a, #fcd34d, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* Header */
+.header { position: sticky; top: 0; z-index: 100; background: var(--primary-dark); border-bottom: 1px solid var(--border-light); padding: 0.6rem 1.5rem; backdrop-filter: blur(10px); }
+.header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+.header-logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+.header-logo img { height: 36px; width: 36px; border-radius: 4px; object-fit: cover; }
+.header-nav { display: none; gap: 2rem; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
+.header-nav a { color: white; text-decoration: none; transition: color 0.2s; }
+.header-nav a:hover { color: var(--accent); }
+@media(min-width:768px) { .header-nav { display: flex; } }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.6rem 1.5rem; border-radius: var(--radius); font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; border: none; text-decoration: none; }
+.btn:active { transform: scale(0.97); }
+.btn-accent { background: var(--accent); color: var(--primary-dark); font-weight: 800; }
+.btn-accent:hover { background: var(--accent-light); }
+.btn-outline { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
+.btn-outline:hover { background: var(--primary); color: white; }
+
+/* Hero */
+.hero { text-align: center; padding: 5rem 1.5rem 3rem; background: var(--primary); color: white; }
+.hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 400; margin-bottom: 0.5rem; line-height: 1.1; color: white; }
+.hero h1 .gold { font-style: italic; color: transparent; background: var(--accent-gradient); -webkit-background-clip: text; background-clip: text; }
+.hero .subtitle { font-size: 1rem; color: var(--muted-light); margin-top: 1rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 500; }
+.hero .divider { width: 60px; height: 3px; background: var(--accent); margin: 1.5rem auto; border-radius: 2px; }
+
+/* Intro */
+.intro { background: var(--primary); padding: 2rem 1.5rem 3rem; text-align: center; color: white; }
+.intro-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 1rem; padding: 2.5rem 2rem; max-width: 800px; margin: 0 auto; }
+.intro-card h2 { font-size: 1.5rem; font-style: italic; margin-bottom: 1rem; color: white; }
+.intro-card h2 .gold { font-weight: 700; }
+.intro-card p { color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.8; }
+
+/* Promo Banner */
+.promo-banner { background: linear-gradient(135deg, #1565c0, #003e8f); border: 2px solid var(--accent); border-radius: 1rem; padding: 2rem; text-align: center; max-width: 700px; margin: 2rem auto; }
+.promo-banner .promo-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 0.5rem; }
+.promo-banner .promo-highlight { font-size: 1.1rem; font-weight: 700; margin: 1rem 0; color: white; }
+.promo-banner .promo-highlight .gold { color: transparent; background: var(--accent-gradient); -webkit-background-clip: text; background-clip: text; font-weight: 800; }
+.promo-banner .promo-value { font-size: 0.9rem; color: var(--accent); font-weight: 600; }
+.promo-banner .promo-note { font-size: 0.8rem; color: rgba(255,255,255,0.6); font-style: italic; margin-top: 0.5rem; }
+.promo-banner .countdown-label { display: flex; align-items: center; justify-content: center; gap: 0.5rem; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; }
+.promo-banner .countdown-label span { background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.countdown-boxes { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 1.5rem; }
+.countdown-box { display: flex; flex-direction: column; align-items: center; }
+.countdown-box .cd-value { width: 60px; height: 60px; border-radius: 0.5rem; border: 1.5px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 900; font-family: 'Inter', monospace; color: white; }
+.countdown-box.highlight .cd-value { background: rgba(255,255,255,0.1); color: #fcd34d; }
+.countdown-box .cd-label { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); margin-top: 0.3rem; }
+.promo-banner .lock-text { font-size: 0.8rem; color: rgba(255,255,255,0.6); margin-bottom: 1rem; }
+
+/* Inclusions Section */
+.inclusions-section { background: white; padding: 5rem 1.5rem; color: var(--text-dark); }
+.inclusions-header { background: var(--primary); padding: 3rem 1.5rem; text-align: center; border-radius: 1rem; margin-bottom: 3rem; position: relative; overflow: hidden; }
+.inclusions-header::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: var(--accent); }
+.inclusions-header .section-badge { display: inline-block; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em; background: rgba(255,255,255,0.15); color: white; padding: 0.4rem 1rem; border-radius: 2rem; margin-bottom: 1rem; border: 1px solid rgba(255,255,255,0.2); }
+.inclusions-header h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: white; font-style: italic; margin-bottom: 0.5rem; }
+.inclusions-header p { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+.inclusions-content { max-width: 800px; margin: 0 auto; }
+.inclusions-block { margin-bottom: 3rem; }
+.inclusions-block h3 { font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; font-family: 'Inter', sans-serif; }
+.inclusions-block h3.green { color: #16a34a; }
+.inclusions-block h3.red { color: #dc2626; }
+.inclusions-block h3.blue { color: var(--primary); }
+.inclusions-list { background: #f8fffe; border: 1px solid #d1fae5; border-radius: 1rem; padding: 1.5rem 2rem; }
+.exclusions-list { background: #fef2f2; border: 1px solid #fecaca; border-radius: 1rem; padding: 1.5rem 2rem; }
+.optionals-list { background: #f0f4ff; border: 1px solid #dbeafe; border-radius: 1rem; padding: 1.5rem 2rem; }
+.list-item { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.6rem 0; font-size: 0.9rem; color: #374151; }
+.list-item .icon { font-size: 0.85rem; margin-top: 2px; flex-shrink: 0; }
+.list-item .icon.green { color: #16a34a; }
+.list-item .icon.red { color: #dc2626; }
+.list-item .icon.blue { color: var(--primary); }
+.inclusions-cta { text-align: center; margin-top: 2rem; }
+.inclusions-cta .btn { padding: 0.8rem 2rem; font-size: 0.9rem; border-radius: 2rem; }
+
+/* Modals */
+.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 9999; align-items: center; justify-content: center; padding: 1rem; }
+.modal-overlay.active { display: flex; }
+.modal-content { background: white; border-radius: 1.5rem; padding: 2rem; max-width: 420px; width: 100%; color: var(--text-dark); position: relative; max-height: 90vh; overflow-y: auto; }
+.modal-close { position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #6b7a94; }
+.modal-icon { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; }
+.modal-icon.blue { background: rgba(0,62,143,0.1); }
+.modal-icon.gold { background: rgba(245,158,11,0.1); }
+.modal-title { text-align: center; font-size: 1.5rem; font-weight: 900; color: var(--primary); margin-bottom: 0.25rem; }
+.modal-subtitle { text-align: center; font-size: 0.8rem; color: #6b7a94; margin-bottom: 1.5rem; }
+.modal-card { border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1rem; }
+.modal-card.blue { background: rgba(0,62,143,0.03); border: 1px solid rgba(0,62,143,0.15); }
+.modal-card.gold { background: rgba(245,158,11,0.03); border: 1px solid rgba(245,158,11,0.15); }
+.modal-card .step-row { display: flex; align-items: flex-start; gap: 0.75rem; }
+.modal-card .step-num { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+.modal-card .step-num.gold { background: rgba(245,158,11,0.2); color: #92400e; }
+.modal-card .step-label { font-size: 0.75rem; font-weight: 700; color: var(--primary); }
+.modal-card .step-amount { font-size: 1.2rem; font-weight: 900; margin: 0.25rem 0; }
+.modal-card .step-amount.gold { color: #f59e0b; }
+.modal-card .step-amount.blue { color: var(--primary); }
+.modal-card .step-desc { font-size: 0.75rem; color: #6b7a94; line-height: 1.5; }
+.modal-card .step-note { font-size: 0.7rem; color: #f59e0b; font-weight: 700; background: rgba(245,158,11,0.05); border: 1px solid rgba(245,158,11,0.1); padding: 0.4rem 0.6rem; border-radius: 0.4rem; margin-top: 0.5rem; }
+.modal-card .check-note { display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(0,62,143,0.05); padding: 0.5rem 0.75rem; border-radius: 0.5rem; border: 1px solid rgba(0,62,143,0.1); margin-top: 0.75rem; }
+.modal-card .divider { height: 1px; background: rgba(245,158,11,0.1); margin: 1rem 0; }
+.modal-note { font-size: 0.7rem; color: #6b7a94; font-style: italic; text-align: center; margin-bottom: 1rem; }
+.modal-btn { width: 100%; padding: 0.75rem; border: none; border-radius: 0.75rem; font-size: 0.85rem; font-weight: 700; cursor: pointer; color: white; transition: all 0.2s; }
+.modal-btn.blue { background: var(--primary); }
+.modal-btn.gold { background: linear-gradient(135deg, #f59e0b, #f59e0b); }
+.modal-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+
+/* Stats Row */
+.stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 800px; margin: 2rem auto; }
+.stat-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 0.75rem; padding: 1.5rem 1rem; text-align: center; }
+.stat-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.stat-title { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; color: white; }
+.stat-sub { font-size: 0.75rem; color: rgba(255,255,255,0.6); }
+@media(max-width:640px) { .stats-row { grid-template-columns: 1fr; } }
+
+/* CTA Row */
+.cta-row { display: flex; gap: 1rem; justify-content: center; margin: 2rem 0 3rem; flex-wrap: wrap; }
+
+/* Features Section */
+.features { background: #f8faff; padding: 5rem 1.5rem; color: var(--text-dark); }
+.features .section-badge { display: inline-block; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em; background: var(--primary); color: white; padding: 0.4rem 1rem; border-radius: 2rem; margin-bottom: 1rem; }
+.features h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--primary); margin-bottom: 0.75rem; }
+.features .features-sub { color: #6b7a94; font-size: 0.95rem; max-width: 600px; margin: 0 auto 3rem; }
+.features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1000px; margin: 0 auto; }
+.feature-card { background: white; border-radius: 1rem; padding: 2rem 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid #e8edf5; }
+.feature-card .icon-circle { width: 48px; height: 48px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.2rem; }
+.feature-card h3 { font-size: 1.1rem; color: var(--primary); margin-bottom: 0.75rem; font-style: italic; }
+.feature-card p { font-size: 0.85rem; color: #6b7a94; line-height: 1.7; }
+.feature-card .highlight-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 0.5rem; padding: 0.75rem; margin-top: 1rem; text-align: center; }
+.feature-card .highlight-box .price { font-size: 1.5rem; font-weight: 900; color: #16a34a; font-family: 'Inter', sans-serif; }
+.feature-card .highlight-box .note { font-size: 0.75rem; color: #16a34a; }
+.feature-card .red-text { color: #dc2626; font-weight: 700; font-style: italic; }
+@media(max-width:768px) { .features-grid { grid-template-columns: 1fr; } }
+
+/* Itinerary Section */
+.itinerary { background: var(--bg); padding: 5rem 1.5rem; color: var(--text-body); }
+.itinerary .section-badge { display: inline-block; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em; background: var(--primary); color: white; padding: 0.4rem 1rem; border-radius: 2rem; margin-bottom: 1rem; }
+.itinerary h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-style: italic; margin-bottom: 0.75rem; }
+.itinerary .section-sub { color: var(--muted); font-size: 0.95rem; max-width: 600px; margin: 0 auto 2rem; }
+.itinerary-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+@media(max-width:900px) { .itinerary-layout { grid-template-columns: 1fr; } }
+.map-panel { position: sticky; top: 80px; }
+.map-panel img { width: 100%; border-radius: 1rem; box-shadow: var(--shadow); }
+.city-tabs { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
+.city-tab { padding: 0.4rem 0.8rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700; background: rgba(0,62,143,0.1); border: 1px solid var(--primary); color: var(--primary); cursor: pointer; transition: all 0.2s; }
+.city-tab.active, .city-tab:hover { background: var(--accent); color: var(--primary-dark); border-color: var(--accent); }
+.day-tabs { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.day-tab { padding: 0.4rem 0.7rem; border-radius: 0.5rem; font-size: 0.7rem; font-weight: 700; background: rgba(0,62,143,0.08); border: 1px solid var(--border); color: var(--primary); cursor: pointer; transition: all 0.2s; }
+.day-tab.active { background: var(--accent); color: var(--primary-dark); border-color: var(--accent); }
+.day-tab:hover { background: rgba(0,62,143,0.15); }
+.day-content { background: white; border: 1px solid var(--border); border-radius: 1rem; padding: 2rem; }
+.day-content .day-label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-bottom: 0.5rem; }
+.day-content h3 { font-size: 1.3rem; font-style: italic; margin-bottom: 1rem; color: var(--primary); }
+.day-content .description { font-size: 0.9rem; color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem; }
+.day-content .description strong { color: var(--primary); font-weight: 700; }
+.day-content .collage-img { width: 100%; border-radius: 0.75rem; margin-bottom: 1.5rem; box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
+.day-content .info-section { margin-bottom: 1rem; }
+.day-content .info-title { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; color: var(--accent); font-family: 'Inter', sans-serif; }
+.day-content .info-list { list-style: none; padding: 0; }
+.day-content .info-list li { font-size: 0.85rem; color: var(--muted); padding: 0.25rem 0; padding-left: 1rem; position: relative; }
+.day-content .info-list li::before { content: "•"; position: absolute; left: 0; color: var(--accent); font-weight: bold; }
+.day-content .meals-badge { display: inline-flex; align-items: center; gap: 0.3rem; background: rgba(34,197,94,0.1); color: #16a34a; font-size: 0.8rem; font-weight: 600; padding: 0.3rem 0.8rem; border-radius: 2rem; }
+.day-content .travel-time { font-size: 0.8rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; }
+.day-content .optional-box { background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.3); border-radius: 0.5rem; padding: 0.75rem 1rem; margin-top: 1rem; }
+.day-content .optional-box .opt-title { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--accent); margin-bottom: 0.3rem; font-family: 'Inter', sans-serif; }
+.day-content .optional-box p { font-size: 0.8rem; color: var(--muted); }
+.day-content .note-text { font-size: 0.75rem; color: var(--muted); font-style: italic; margin-top: 1rem; }
+
+/* Group Trip Banner */
+.group-banner { background: linear-gradient(135deg, #1565c0, #2a4a9b); border: 1px solid var(--border); border-radius: 1rem; padding: 2rem; text-align: center; margin-top: 3rem; }
+.group-banner h3 { font-size: 1.3rem; font-style: italic; margin-bottom: 0.5rem; color: white; }
+.group-banner p { font-size: 0.9rem; color: var(--muted-light); margin-bottom: 1rem; }
+
+/* Pricing Section */
+.pricing { background: #f8faff; padding: 5rem 1.5rem; color: var(--text-dark); }
+.pricing .section-badge { display: inline-block; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em; background: var(--primary); color: white; padding: 0.4rem 1rem; border-radius: 2rem; margin-bottom: 1rem; }
+.pricing h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--primary); margin-bottom: 0.75rem; }
+.pricing .section-sub { color: #6b7a94; font-size: 0.95rem; max-width: 600px; margin: 0 auto 3rem; }
+.pricing-card { background: white; border-radius: 1.5rem; overflow: visible; box-shadow: 0 4px 30px rgba(0,0,0,0.08); border: 1px solid #e8edf5; max-width: 1000px; margin: 1.5rem auto 0; }
+.pricing-header { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; border-bottom: 1px solid #e8edf5; position: relative; }
+.pricing-header-intro { padding: 2rem 1.5rem; text-align: left; display: flex; flex-direction: column; justify-content: center; }
+.pricing-header-intro h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem; }
+.pricing-header-intro p { font-size: 0.85rem; color: #6b7a94; line-height: 1.5; }
+.pricing-header-col { padding: 1.5rem 1rem; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; border-left: 1px solid #e8edf5; }
+.pricing-header-col .col-badge { font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.25rem 0.75rem; border-radius: 1rem; border: 1.5px solid var(--primary); color: var(--primary); }
+.pricing-header-col.best-seller-col .col-badge { background: linear-gradient(135deg, #f59e0b, #f59e0b); color: white; border: none; }
+.pricing-header-col.best-seller-col .col-sub-badge { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.2rem 0.6rem; border-radius: 0.5rem; background: #fef3c7; color: #92400e; }
+.pricing-header-col .col-amount { font-size: 1.8rem; font-weight: 900; color: var(--primary); font-family: 'Inter', sans-serif; }
+.pricing-header-col.best-seller-col .col-amount { color: #f59e0b; }
+.pricing-header-col .col-sub { font-size: 0.75rem; color: #6b7a94; font-style: italic; }
+.pricing-header-col .view-schedule-btn { display: inline-block; padding: 0.5rem 1.2rem; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 700; cursor: pointer; text-decoration: none; transition: all 0.2s; margin-top: 0.3rem; }
+.pricing-header-col .view-schedule-btn.dark { background: var(--primary); color: white; }
+.pricing-header-col .view-schedule-btn.gold { background: linear-gradient(135deg, #f59e0b, #f59e0b); color: white; }
+.pricing-header-col .view-schedule-btn:hover { transform: scale(0.97); opacity: 0.9; }
+.pricing-rows { }
+.pricing-row-item { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; border-bottom: 1px solid #f1f5f9; }
+.pricing-row-item:last-child { border-bottom: none; }
+.pricing-row-item .row-label { padding: 1rem 1.5rem; font-weight: 700; color: var(--primary); font-size: 0.9rem; display: flex; align-items: center; }
+.pricing-row-item .row-value { padding: 1rem; text-align: center; font-size: 0.85rem; color: #4a5568; display: flex; align-items: center; justify-content: center; border-left: 1px solid #f1f5f9; }
+.pricing-row-item .row-value .check-badge { color: #003e8f; font-weight: 700; font-size: 0.85rem; }
+.pricing-row-item .row-value .discount-badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 0.4rem; font-size: 0.75rem; font-weight: 700; border: 1.5px solid #f59e0b; color: #f59e0b; }
+.pricing-row-item .row-value .free-badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 0.4rem; font-size: 0.75rem; font-weight: 700; border: 1.5px solid #dc2626; color: #dc2626; }
+.pricing-view-link { text-align: center; padding: 2rem; border-top: 1px solid #e8edf5; }
+.pricing-view-link a { color: var(--primary); font-weight: 600; font-size: 0.9rem; text-decoration: none; border-bottom: 1.5px solid var(--primary); padding-bottom: 2px; }
+.pricing-view-link a:hover { color: var(--primary-light); border-color: var(--primary-light); }
+@media(max-width:768px) {
+  .pricing-header { grid-template-columns: 1fr; }
+  .pricing-header-intro { text-align: center; border-bottom: 1px solid #e8edf5; }
+  .pricing-header-col { border-left: none; border-bottom: 1px solid #e8edf5; }
+  .pricing-row-item { grid-template-columns: 1fr; }
+  .pricing-row-item .row-label { border-bottom: none; padding-bottom: 0.25rem; justify-content: center; }
+  .pricing-row-item .row-value { border-left: none; padding-top: 0.25rem; }
+}
+
+/* Reservation Form */
+.reservation { background: var(--primary); padding: 5rem 1.5rem; }
+.reservation .section-badge { display: inline-block; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em; background: rgba(255,255,255,0.1); color: white; padding: 0.4rem 1rem; border-radius: 2rem; margin-bottom: 1rem; }
+.reservation h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-style: italic; margin-bottom: 0.75rem; color: white; }
+.reservation .section-sub { color: rgba(255,255,255,0.7); font-size: 0.95rem; max-width: 600px; margin: 0 auto 3rem; }
+.form-card { background: white; border-radius: 1.5rem; padding: 2.5rem; max-width: 900px; margin: 0 auto; color: var(--text-dark); }
+.form-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem; }
+.form-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1rem; }
+@media(max-width:640px) { .form-grid { grid-template-columns: 1fr; } .form-grid-2 { grid-template-columns: 1fr; } }
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-group label { font-size: 0.75rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; }
+.form-group input, .form-group select, .form-group textarea { background: #f8faff; border: 1.5px solid var(--border); border-radius: 0.5rem; padding: 0.7rem 0.9rem; font-size: 0.9rem; color: var(--text-dark); font-family: 'Inter', sans-serif; transition: border-color 0.2s; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); background: white; }
+.form-group textarea { resize: vertical; min-height: 80px; }
+.toggle-section { margin-bottom: 1.5rem; }
+.toggle-label { font-size: 0.75rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+.toggle-group { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.toggle-group-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+@media(max-width:480px) { .toggle-group-3 { grid-template-columns: 1fr; } }
+.toggle-option { border: 2px solid var(--border); border-radius: 0.75rem; padding: 1rem; cursor: pointer; transition: all 0.2s; text-align: center; }
+.toggle-option:hover { border-color: var(--primary); background: rgba(0,62,143,0.03); }
+.toggle-option.active { border-color: var(--primary); background: rgba(0,62,143,0.05); }
+.toggle-title { font-size: 0.85rem; font-weight: 700; color: var(--primary); }
+.toggle-sub { font-size: 0.7rem; color: var(--muted); margin-top: 0.2rem; }
+.toggle-price { font-size: 1.1rem; font-weight: 900; color: var(--primary); margin-top: 0.3rem; font-family: 'Inter', sans-serif; }
+.installment-preview { background: #f8faff; border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem; display: none; }
+.installment-preview h4 { font-size: 0.85rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; font-family: 'Inter', sans-serif; }
+.installment-preview .note { font-size: 0.8rem; color: var(--muted); margin-bottom: 1rem; }
+.installment-row { display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+.installment-row:last-child { border-bottom: none; }
+.installment-row .date { color: var(--muted); }
+.installment-row .amount { font-weight: 700; color: var(--primary); }
+.installment-row.total { font-weight: 800; border-top: 2px solid var(--primary); margin-top: 0.5rem; padding-top: 0.5rem; }
+.installment-row.total .date { color: var(--primary); }
+.installment-row.total .amount { color: var(--primary); font-size: 1rem; }
+.installment-divider { height: 1px; background: var(--border); margin: 0.75rem 0; }
+.installment-sub-header { font-size: 0.8rem; font-weight: 700; color: var(--primary); padding: 0.3rem 0; }
+.discount-breakdown { background: rgba(0,62,143,0.03); border: 1px solid rgba(0,62,143,0.1); border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 0.75rem; }
+.discount-breakdown-title { font-size: 0.75rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
+.discount-row { display: flex; justify-content: space-between; font-size: 0.8rem; padding: 0.2rem 0; color: var(--muted); }
+.badge { display: inline-block; font-size: 0.65rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 0.3rem; margin-left: 0.25rem; }
+.badge-infant { background: #fef3c7; color: #92400e; }
+.badge-child { background: #dbeafe; color: #1e40af; }
+.badge-senior { background: #f3e8ff; color: #6b21a8; }
+.pricing-summary { background: #f8faff; border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem; }
+.pricing-summary h4 { font-size: 0.85rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; font-family: 'Inter', sans-serif; }
+.pricing-row { display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+.pricing-row:last-child { border-bottom: none; }
+.pricing-row .label { color: var(--muted); }
+.pricing-row .value { font-weight: 700; color: var(--primary); }
+.pricing-row.total { font-weight: 800; border-top: 2px solid var(--primary); margin-top: 0.5rem; padding-top: 0.5rem; }
+.pricing-row.total .label, .pricing-row.total .value { color: var(--primary); font-size: 1rem; }
+.original { text-decoration: line-through; color: var(--muted); font-size: 0.8rem; margin-right: 0.25rem; }
+.discount-text { color: #16a34a; font-size: 0.75rem; margin-left: 0.25rem; }
+.savings-banner { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 0.5rem; padding: 0.75rem; margin-top: 0.75rem; font-size: 0.85rem; font-weight: 700; color: #16a34a; text-align: center; }
+.pricing-note { font-size: 0.75rem; color: var(--muted); margin-top: 0.75rem; font-style: italic; }
+.traveler-block { background: #f8faff; border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; }
+.traveler-label { font-size: 0.8rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; }
+.submit-section { text-align: center; }
+.checkbox-row { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1.5rem; text-align: left; }
+.checkbox-row input[type="checkbox"] { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--primary); flex-shrink: 0; cursor: pointer; }
+.checkbox-row label { font-size: 0.85rem; color: var(--muted); line-height: 1.5; cursor: pointer; }
+.submit-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2.5rem; background: var(--accent); color: var(--primary-dark); border: none; border-radius: var(--radius); font-size: 1rem; font-weight: 800; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(230,173,0,0.3); }
+.submit-btn:hover { background: var(--accent-light); transform: translateY(-1px); }
+.submit-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+.secure-note { font-size: 0.75rem; color: var(--muted); margin-top: 0.75rem; }
+
+/* Footer */
+.footer { background: var(--primary-dark); color: white; padding: 4rem 1.5rem 2rem; }
+.footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; max-width: 1200px; margin: 0 auto 3rem; }
+@media(max-width:768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media(max-width:480px) { .footer-grid { grid-template-columns: 1fr; } }
+.footer h4 { font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; color: var(--accent); font-family: 'Inter', sans-serif; }
+.footer p { font-size: 0.8rem; color: rgba(255,255,255,0.6); line-height: 1.7; }
+.footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.75rem; color: rgba(255,255,255,0.4); max-width: 1200px; margin: 0 auto; }
+
+/* Promo Code Section */
+.promo-code-section { display: none; background: rgba(245,158,11,0.05); border: 1px solid rgba(245,158,11,0.3); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem; }
+.promo-code-section.active { display: block; }
+.promo-code-section .promo-title { font-size: 0.85rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem; }
+.promo-code-section .promo-desc { font-size: 0.8rem; color: var(--muted); margin-bottom: 1rem; line-height: 1.6; }
+.promo-code-row { display: flex; gap: 0.75rem; align-items: center; }
+.promo-code-row input { flex: 1; background: white; border: 1px solid var(--border); border-radius: 0.5rem; padding: 0.7rem 0.9rem; font-size: 0.9rem; color: var(--text-dark); font-family: 'Inter', sans-serif; letter-spacing: 0.1em; text-transform: uppercase; }
+.promo-code-row input:focus { outline: none; border-color: var(--accent); }
+.promo-code-row button { padding: 0.7rem 1.5rem; background: var(--accent); color: var(--primary-dark); font-weight: 800; font-size: 0.8rem; border: none; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+.promo-code-row button:hover { background: var(--accent-light); }
+.promo-code-row button:disabled { opacity: 0.5; cursor: not-allowed; }
+.promo-verified { display: none; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #16a34a; font-weight: 700; margin-top: 0.75rem; }
+.promo-verified.show { display: flex; }
+.promo-error { display: none; font-size: 0.8rem; color: #f87171; margin-top: 0.5rem; }
+.promo-error.show { display: block; }
+
+/* Toast */
+.toast { position: fixed; top: 1rem; right: 1rem; background: #16a34a; color: white; padding: 1rem 1.5rem; border-radius: 0.75rem; font-size: 0.9rem; font-weight: 600; z-index: 9999; transform: translateX(120%); transition: transform 0.3s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+.toast.show { transform: translateX(0); }
+.toast.error { background: #dc2626; }
+
+/* ===== BOOKING CONFIRMATION ===== */
+.booking-confirmation { max-width: 850px; margin: 0 auto; background: #fff; border-radius: 0; box-shadow: 0 8px 40px rgba(0,0,0,0.2); font-family: 'Inter', sans-serif; color: #002d6b; }
+.bc-header { background: linear-gradient(135deg, #003e8f, #1565c0); color: white; padding: 1.5rem 2rem 1.25rem; }
+.bc-header-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.bc-header-left { display: flex; align-items: center; gap: 0.75rem; }
+.bc-header-left img { height: 48px; width: 48px; border-radius: 8px; object-fit: cover; border: 2px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); }
+.bc-header-left h2 { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; margin: 0; font-family: 'Inter', sans-serif; }
+.bc-header-left .sub { font-size: 0.7rem; color: rgba(255,255,255,0.7); margin-top: 2px; }
+.bc-header-right { text-align: right; }
+.bc-badge { display: inline-block; background: #e6ad00; color: #003e8f; font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; padding: 0.3rem 0.75rem; border-radius: 3px; }
+.bc-header-right .date { font-size: 0.65rem; color: rgba(255,255,255,0.6); margin-top: 0.4rem; }
+.bc-header-contact { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.15); font-size: 0.7rem; color: rgba(255,255,255,0.7); }
+.bc-body { padding: 2rem; }
+.bc-section-title { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: #003e8f; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; font-family: 'Inter', sans-serif; }
+.bc-section-title::before { content: ''; width: 4px; height: 20px; background: #003e8f; border-radius: 2px; }
+.bc-details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 2rem; background: #f8fafc; border-radius: 0.75rem; padding: 1.25rem 1.5rem; border: 1px solid #e8edf5; margin-bottom: 2rem; }
+.bc-detail-item label { display: block; font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #6b7a94; margin-bottom: 0.2rem; }
+.bc-detail-item p { font-size: 0.85rem; font-weight: 700; color: #002d6b; margin: 0; }
+.bc-detail-item p.highlight { color: #003e8f; }
+@media(max-width:640px) { .bc-details-grid { grid-template-columns: 1fr; } }
+.bc-table { width: 100%; border-collapse: collapse; font-size: 0.75rem; margin-bottom: 2rem; border: 1px solid #e8edf5; border-radius: 0.5rem; overflow: hidden; }
+.bc-table thead tr { background: rgba(0,62,143,0.05); }
+.bc-table th { padding: 0.6rem 0.75rem; text-align: left; font-weight: 700; color: #003e8f; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #e8edf5; }
+.bc-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid #f1f5f9; color: #374151; }
+.bc-table tbody tr:last-child td { border-bottom: none; }
+.bc-table .font-bold { font-weight: 700; }
+.bc-table .mono { font-family: 'Inter', monospace; color: #6b7a94; }
+.bc-pricing-section { margin-bottom: 2rem; }
+.bc-pricing-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; border: 1px solid #e8edf5; border-radius: 0.5rem; overflow: hidden; }
+.bc-pricing-table thead tr { background: rgba(0,62,143,0.05); }
+.bc-pricing-table th { padding: 0.6rem 1rem; font-weight: 700; color: #003e8f; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #e8edf5; }
+.bc-pricing-table td { padding: 0.6rem 1rem; border-bottom: 1px solid #f1f5f9; }
+.bc-pricing-table .text-right { text-align: right; }
+.bc-pricing-table .text-center { text-align: center; }
+.bc-pricing-table .total-row { background: rgba(0,62,143,0.05); border-top: 1px solid #e8edf5; }
+.bc-pricing-table .total-row td { font-weight: 900; color: #003e8f; }
+.bc-pricing-table .discount-row td { color: #16a34a; }
+.bc-breakdown { margin-bottom: 2rem; }
+.bc-breakdown ul { list-style: disc; padding-left: 1.25rem; }
+.bc-breakdown li { font-size: 0.8rem; padding: 0.25rem 0; color: #374151; }
+.bc-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 2rem; }
+@media(max-width:640px) { .bc-benefits { grid-template-columns: 1fr; } }
+.bc-benefit { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 0.5rem; padding: 0.75rem; display: flex; align-items: flex-start; gap: 0.5rem; }
+.bc-benefit .icon { color: #16a34a; font-size: 0.9rem; flex-shrink: 0; margin-top: 1px; }
+.bc-benefit .title { font-size: 0.7rem; font-weight: 700; color: #166534; }
+.bc-benefit .desc { font-size: 0.65rem; color: #16a34a; }
+.bc-bank-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+@media(max-width:640px) { .bc-bank-grid { grid-template-columns: 1fr; } }
+.bc-bank-card { background: #f8fafc; border-radius: 0.75rem; padding: 1rem 1.25rem; border: 1px solid #e2e8f0; }
+.bc-bank-card .bank-name { font-size: 0.8rem; font-weight: 800; color: #1a2744; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.15rem; }
+.bc-bank-card .bank-full { font-size: 0.65rem; color: #6b7a94; margin-bottom: 0.15rem; }
+.bc-bank-card .bank-acct-name { font-size: 0.7rem; color: #374151; margin-bottom: 0.4rem; }
+.bc-bank-card .bank-number { font-size: 1rem; font-weight: 800; color: #1a2744; font-family: 'Inter', monospace; letter-spacing: 0.1em; }
+.bc-payment-schedule { margin-bottom: 2rem; }
+.bc-inclusions { margin-bottom: 2rem; }
+.bc-separator { height: 1px; background: #e8edf5; margin: 2rem 0; }
+.bc-footer { text-align: center; padding: 1.5rem 2rem; background: #f8fafc; border-top: 1px solid #e8edf5; }
+.bc-footer p { font-size: 0.75rem; color: #6b7a94; margin: 0.25rem 0; }
+.bc-footer .company { font-weight: 700; color: #003e8f; font-size: 0.85rem; }
+.bc-actions { display: flex; gap: 0.75rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
+.bc-actions button { padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-size: 0.85rem; font-weight: 700; cursor: pointer; border: none; transition: all 0.2s; display: flex; align-items: center; gap: 0.5rem; }
+.bc-actions button:active { transform: scale(0.97); }
+.bc-actions .btn-print { background: #003e8f; color: white; }
+.bc-actions .btn-print:hover { background: #1565c0; }
+.bc-actions .btn-new { background: transparent; color: #003e8f; border: 2px solid #003e8f; }
+.bc-actions .btn-new:hover { background: rgba(0,62,143,0.05); }
+.bc-vat-note { font-size: 0.7rem; color: #6b7a94; font-style: italic; margin-top: 0.5rem; }
+
+/* Terms & Conditions */
+.bc-tc-container { margin-bottom: 2rem; }
+.bc-tc-scroll { max-height: 400px; overflow-y: auto; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; background: #fafbfc; font-size: 0.7rem; line-height: 1.7; color: #374151; }
+.bc-tc-scroll h3 { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #002d6b; margin: 1.25rem 0 0.5rem; padding-bottom: 0.3rem; border-bottom: 1px solid #e2e8f0; }
+.bc-tc-scroll h3:first-child { margin-top: 0; }
+.bc-tc-scroll p { margin-bottom: 0.5rem; text-align: justify; }
+.bc-tc-scroll .indent { padding-left: 1.25rem; }
+.bc-tc-scroll .bold { font-weight: 700; }
+
+/* Agreement Checkbox */
+.bc-agreement { margin: 1.5rem 0; padding: 1.25rem; background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 0.75rem; transition: border-color 0.2s; }
+.bc-agreement.checked { border-color: #16a34a; background: #f0fdf4; }
+.bc-agreement label { display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; font-size: 0.8rem; color: #002d6b; line-height: 1.5; }
+.bc-agreement input[type="checkbox"] { margin-top: 3px; width: 18px; height: 18px; accent-color: #003e8f; flex-shrink: 0; cursor: pointer; }
+
+/* Signature Section */
+.bc-signature-section { margin-bottom: 2rem; }
+.bc-signature-intro { font-size: 0.75rem; color: #6b7a94; line-height: 1.6; margin-bottom: 1.5rem; }
+.bc-signature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media(max-width:640px) { .bc-signature-grid { grid-template-columns: 1fr; } }
+.bc-sig-label { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #6b7a94; margin-bottom: 0.5rem; }
+.bc-sig-canvas-wrap { position: relative; border: 2px solid #e2e8f0; border-radius: 0.75rem; background: #fff; height: 120px; overflow: hidden; transition: border-color 0.2s; }
+.bc-sig-canvas-wrap.has-signature { border-color: #16a34a; }
+.bc-sig-canvas-wrap canvas { width: 100%; height: 100%; display: block; cursor: crosshair; }
+.bc-sig-placeholder { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7rem; color: #94a3b8; pointer-events: none; text-align: center; }
+.bc-sig-actions { display: flex; justify-content: flex-end; margin-top: 0.4rem; }
+.bc-sig-clear { font-size: 0.65rem; color: #ef4444; cursor: pointer; border: none; background: none; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; }
+.bc-sig-clear:hover { background: #fef2f2; }
+.bc-sig-info { margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px solid #e8edf5; }
+.bc-sig-info .name { font-size: 0.8rem; font-weight: 700; color: #002d6b; }
+.bc-sig-info .date { font-size: 0.65rem; color: #6b7a94; margin-top: 0.15rem; }
+.bc-sig-consultant { border: 2px dashed #e2e8f0; border-radius: 0.75rem; background: #fafbfc; height: 120px; display: flex; align-items: center; justify-content: center; }
+.bc-sig-consultant p { font-size: 0.7rem; color: #94a3b8; font-style: italic; }
+
+/* Confirmation Submit Button */
+.bc-submit-section { text-align: center; margin: 1.5rem 0; }
+.bc-submit-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 2rem; background: #003e8f; color: white; border: none; border-radius: 0.5rem; font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,62,143,0.3); }
+.bc-submit-btn:hover { background: #1565c0; transform: translateY(-1px); }
+.bc-submit-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+.bc-submit-status { font-size: 0.75rem; margin-top: 0.75rem; }
+.bc-submit-status.ready { color: #16a34a; font-weight: 700; }
+.bc-submit-status.pending { color: #6b7a94; }
+
+@media screen {
+  .bc-package-print { display: none; }
+}
+@media print {
+  body * { visibility: hidden; }
+  .booking-confirmation, .booking-confirmation * { visibility: visible; }
+  .booking-confirmation { position: absolute; left: 0; top: 0; width: 100%; max-width: 100%; box-shadow: none; padding: 0; margin: 0; }
+  .bc-body { padding: 1.5rem !important; }
+  .bc-table { font-size: 0.6rem !important; table-layout: fixed; width: 100% !important; word-wrap: break-word; overflow-wrap: break-word; }
+  .bc-table th, .bc-table td { padding: 0.35rem 0.4rem !important; font-size: 0.6rem !important; word-wrap: break-word; overflow-wrap: break-word; }
+  .bc-package-buttons { display: none !important; }
+  .bc-package-print { display: block !important; }
+  .bc-actions { display: none !important; }
+  .bc-submit-section { display: none !important; }
+  .bc-sig-clear { display: none !important; }
+  .bc-sig-placeholder { display: none !important; }
+  .bc-tc-scroll { max-height: none; overflow: visible; }
+  .header, .footer, .hero, .intro, .features, .itinerary, .pricing, .reservation, .modal-overlay, .toast { display: none !important; }
+  .detail-popup-overlay { display: none !important; }
+}
+
+/* Draggable Detail Popup */
+.detail-popup-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s; pointer-events: none; }
+.detail-popup-overlay.active { opacity: 1; pointer-events: all; }
+.detail-popup { position: absolute; width: 90%; max-width: 500px; max-height: 80vh; background: white; border-radius: 1rem; box-shadow: 0 25px 60px rgba(0,0,0,0.3); overflow: hidden; transform: scale(0.95); transition: transform 0.2s; }
+.detail-popup-overlay.active .detail-popup { transform: scale(1); }
+.detail-popup-header { padding: 1.2rem 1.5rem; display: flex; align-items: center; justify-content: space-between; cursor: grab; user-select: none; border-bottom: 2px solid #e5e7eb; }
+.detail-popup-header:active { cursor: grabbing; }
+.detail-popup-header h3 { font-size: 1.3rem; font-weight: 900; margin: 0; font-family: 'Inter', sans-serif; letter-spacing: 0.01em; color: #111827; }
+.detail-popup-header .close-btn { width: 34px; height: 34px; border-radius: 50%; border: none; background: #f3f4f6; font-size: 1.3rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+.detail-popup-header .close-btn:hover { background: #e5e7eb; }
+.detail-popup-body { padding: 1.5rem; overflow-y: auto; max-height: calc(80vh - 60px); }
+.detail-popup-body .list-item { display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.5rem 0; font-size: 0.85rem; color: #374151; border-bottom: 1px solid #f3f4f6; }
+.detail-popup-body .list-item:last-child { border-bottom: none; }
+.detail-popup-body .list-item .icon { flex-shrink: 0; font-weight: 700; }
+.detail-popup-body .list-item .icon.green { color: #16a34a; }
+.detail-popup-body .list-item .icon.red { color: #dc2626; }
+.detail-popup-body .list-item .icon.blue { color: #003e8f; }
+.detail-popup-header.green { background: #ecfdf5; }
+.detail-popup-header.green h3 { color: #166534; }
+.detail-popup-header.red { background: #fef2f2; }
+.detail-popup-header.red h3 { color: #991b1b; }
+.detail-popup-header.blue { background: #eff6ff; }
+.detail-popup-header.blue h3 { color: #1e40af; }
+
+/* Detail Link Buttons */
+.detail-link-btn { display: flex; align-items: center; gap: 1.2rem; padding: 1.4rem 2rem; border-radius: 1rem; text-decoration: none; font-weight: 700; font-size: 1rem; transition: all 0.3s cubic-bezier(0.23,1,0.32,1); border: 1px solid rgba(230,173,0,0.3); background: linear-gradient(135deg, #003e8f 0%, #1a3a8a 100%); color: white; position: relative; overflow: hidden; box-shadow: 0 4px 15px rgba(0,62,143,0.2); }
+.detail-link-btn::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(230,173,0,0.1), transparent); transition: left 0.5s; }
+.detail-link-btn:hover::before { left: 100%; }
+.detail-link-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,62,143,0.3); border-color: rgba(230,173,0,0.6); }
+.detail-link-btn .detail-link-icon { font-size: 1.4rem; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+.detail-link-btn .detail-link-text { flex: 1; text-align: left; font-family: 'Inter', sans-serif; letter-spacing: 0.02em; }
+.detail-link-btn .detail-link-arrow { font-size: 1.2rem; opacity: 0.5; transition: all 0.3s; color: #d4af37; }
+.detail-link-btn:hover .detail-link-arrow { transform: translateX(5px); opacity: 1; }
+.detail-link-btn.green-btn .detail-link-icon { background: rgba(22,163,106,0.2); color: #4ade80; }
+.detail-link-btn.red-btn .detail-link-icon { background: rgba(220,38,38,0.2); color: #fca5a5; }
+.detail-link-btn.blue-btn .detail-link-icon { background: rgba(37,99,235,0.2); color: #93c5fd; }
+.detail-link-btn .detail-link-sub { display: block; font-size: 0.7rem; font-weight: 400; opacity: 0.7; margin-top: 0.2rem; letter-spacing: 0.03em; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="header-logo">
+      <img src="images/logo.jpg" alt="Discover Group">
+    </a>
+    <nav class="header-nav">
+      <a href="#itinerary">THE ITINERARY</a>
+      <a href="#pricing">PAYMENT SCHEMES</a>
+      <a href="#reservation-form">RESERVE SLOT</a>
+    </nav>
+    <a href="#reservation-form" class="btn btn-accent">Book Now</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <h1><span class="gold">Timeless.</span><br>The Deluxe Way to Discover Türkiye.</h1>
+  <div class="divider"></div>
+  <p class="subtitle">Istanbul | Çanakkale | Pergamon | Kuşadası | Pamukkale | Konya | Cappadocia | Ankara | Bolu</p>
+</section>
+
+<!-- Intro -->
+<section class="intro">
+  <div class="intro-card">
+    <h2><span class="text-gradient-gold">9 Cities. 11 Days.</span> <span class="gold">Immersive.</span></h2>
+    <p>Route T Deluxe is crafted for travelers who want to experience the full grandeur of Türkiye — from the ancient minarets of Istanbul to the surreal fairy chimneys of Cappadocia. With full board meals, comfortable coach transfers, and a carefully curated itinerary, every detail is taken care of.</p>
+    <p style="margin-top:1rem;">Istanbul. Çanakkale. Pergamon. Kuşadası. Pamukkale. Konya. Cappadocia. Ankara. Bolu — each destination woven into a seamless journey through one of the world's most historically rich and visually stunning countries.</p>
+  </div>
+
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    <div class="countdown-label">🕐 <span>PROMO RATE — LIMITED SLOTS ONLY</span></div>
+
+    <div class="countdown-boxes">
+      <div class="countdown-box"><div class="cd-value" id="cd-days">00</div><div class="cd-label">Days</div></div>
+      <div class="countdown-box"><div class="cd-value" id="cd-hours">00</div><div class="cd-label">Hours</div></div>
+      <div class="countdown-box"><div class="cd-value" id="cd-mins">00</div><div class="cd-label">Mins</div></div>
+      <div class="countdown-box highlight"><div class="cd-value" id="cd-secs">00</div><div class="cd-label">Secs</div></div>
+    </div>
+
+    <div class="lock-text">Lock in your slots before all slots are taken to guarantee current pricing & perks!</div>
+
+    <div class="promo-title">Regular Rate: <s>₱220,000/head</s></div>
+    <div class="promo-highlight"><span class="gold">PROMO RATE: ₱120,000/HEAD</span></div>
+    <div class="promo-value">Save ₱100,000 per head!</div>
+    <div class="promo-note">Limited slots only — secure yours now!</div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-icon">💰</div>
+      <div class="stat-title">PROMO ₱120,000</div>
+      <div class="stat-sub">Easy monthly installments</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">🍽️</div>
+      <div class="stat-title">FULL BOARD MEALS</div>
+      <div class="stat-sub">8 Breakfasts, 8 Lunches, 8 Dinners</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">🎯</div>
+      <div class="stat-title">11 DAYS / 8 NIGHTS</div>
+      <div class="stat-sub">2 departure dates available</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-row">
+    <a href="#pricing" class="btn btn-accent">Compare Payment Schemes →</a>
+    <a href="#reservation-form" class="btn btn-outline">Reserve Slot Today</a>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="features" style="text-align:center;">
+  <span class="section-badge">The Deluxe Experience</span>
+  <h2>Why Route T Deluxe Stands Out</h2>
+  <p class="features-sub">Designed for travelers who want to immerse themselves in the rich history, culture, and natural wonders of Türkiye — with full board meals, comfortable pacing, and iconic destinations.</p>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="icon-circle">🍽️</div>
+      <h3>Full Board Meals Included</h3>
+      <p>Enjoy 8 Breakfasts, 8 Lunches, and 8 Dinners throughout the tour — all included in the package. Savor authentic Turkish cuisine at every stop without worrying about meal expenses.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon-circle">🏛️</div>
+      <h3>9 Iconic Destinations</h3>
+      <p>From the historic Blue Mosque and Hagia Sophia in Istanbul, to the surreal travertine terraces of Pamukkale, and the fairy chimneys of Cappadocia — every day brings a new wonder.</p>
+      <div class="highlight-box">
+        <div class="note">Promo rate — save up to</div>
+        <div class="price">₱100,000/head!</div>
+      </div>
+    </div>
+    <div class="feature-card">
+      <div class="icon-circle">🛡️</div>
+      <h3>Visa Protection Guarantee</h3>
+      <p>Book with 100% confidence! In the highly unlikely event of a visa denial, <span class="red-text">we will give you a full refund of the total amount you paid for the package.</span> No hidden fees, no stress, and zero risk!</p>
+    </div>
+  </div>
+</section>
+
+<!-- Itinerary -->
+<section class="itinerary" id="itinerary" style="text-align:center;">
+  <span class="section-badge">The Daily Schedule</span>
+  <h2>Immersive Daily Itinerary</h2>
+  <p class="section-sub">See the exact cities you'll visit day-by-day across Türkiye's most iconic destinations.</p>
+
+  <div class="itinerary-layout" style="text-align:left;">
+    <!-- Map Panel -->
+    <div class="map-panel">
+      <img src="images/turkey-map.jpg" alt="Route T Deluxe Turkey Map" onerror="this.style.background='linear-gradient(135deg,#003e8f,#1565c0)';this.style.minHeight='300px';this.alt='Route T Deluxe — Turkey';this.removeAttribute('src')">
+      <div class="city-tabs">
+        <span class="city-tab active" data-city="istanbul">1 Istanbul</span>
+        <span class="city-tab" data-city="canakkale">2 Çanakkale</span>
+        <span class="city-tab" data-city="kusadasi">3 Kuşadası</span>
+        <span class="city-tab" data-city="pamukkale">4 Pamukkale</span>
+        <span class="city-tab" data-city="cappadocia">5 Cappadocia</span>
+        <span class="city-tab" data-city="ankara">6 Ankara</span>
+      </div>
+    </div>
+
+    <!-- Day Content Panel -->
+    <div class="day-panel">
+      <div class="day-tabs" id="day-tabs"></div>
+      <div class="day-content" id="day-content"></div>
+    </div>
+  </div>
+
+  <!-- Group Trip Banner -->
+  <div class="group-banner">
+    <h3>Planning a group trip?</h3>
+    <p>Book a minimum of 12 pax and enjoy exclusive group benefits! Ask your travel consultant for details.</p>
+    <a href="#reservation-form" class="btn btn-accent">Reserve Slots</a>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing" id="pricing" style="text-align:center;">
+  <span class="section-badge">Flexible Payment Schemes</span>
+  <h2>Compare & Choose Your Ideal Plan</h2>
+  <p class="section-sub">We believe luxury travel should be accessible. Choose from our tailored payment options.</p>
+
+  <div class="pricing-card">
+    <!-- Header Row -->
+    <div class="pricing-header">
+      <div class="pricing-header-intro">
+        <h3>Your Path to Türkiye</h3>
+        <p>Select the perfect option to comfortably fund your dream journey.</p>
+      </div>
+      <div class="pricing-header-col">
+        <span class="col-badge">MONTHLY</span>
+        <div class="col-amount">Monthly</div>
+        <div class="col-sub">Divided equally</div>
+        <a href="#reservation-form" class="view-schedule-btn dark">View Schedule</a>
+      </div>
+      <div class="pricing-header-col best-seller-col" style="position:relative;border-left:2px solid rgba(245,158,11,0.5);border-right:2px solid rgba(245,158,11,0.5);background:rgba(245,158,11,0.03);padding-top:2.5rem;">
+        <span class="col-badge" style="position:absolute;top:0.5rem;left:50%;transform:translateX(-50%);font-size:0.6rem;padding:0.3rem 0.8rem;white-space:nowrap;z-index:2;">⭐ BEST SELLER</span>
+        <span class="col-sub-badge">DOWN PAYMENT</span>
+        <div class="col-amount">₱50,000</div>
+        <button class="view-schedule-btn gold" onclick="openModal('downpayment-modal')">View Schedule</button>
+      </div>
+      <div class="pricing-header-col">
+        <span class="col-badge">FULL CASH</span>
+        <div class="col-amount">₱120,000</div>
+        <button class="view-schedule-btn dark" onclick="openModal('fullcash-modal')">View Schedule</button>
+      </div>
+    </div>
+    <!-- Comparison Rows -->
+    <div class="pricing-rows">
+      <div class="pricing-row-item">
+        <div class="row-label">Total Package Cost</div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;"><strong style="color:var(--primary);">₱120,000</strong></div>
+        <div class="row-value" style="border-left:2px solid rgba(245,158,11,0.3);border-right:2px solid rgba(245,158,11,0.3);background:rgba(245,158,11,0.02);"><strong style="color:#f59e0b;">₱120,000</strong></div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;"><strong style="color:var(--primary);">₱120,000</strong></div>
+      </div>
+      <div class="pricing-row-item">
+        <div class="row-label">Visa Denial Protection</div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;"><span class="check-badge">✓ 100% Refund</span></div>
+        <div class="row-value" style="border-left:2px solid rgba(245,158,11,0.3);border-right:2px solid rgba(245,158,11,0.3);background:rgba(245,158,11,0.02);"><span class="check-badge" style="color:#f59e0b;">✓ 100% Refund</span></div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;"><span class="check-badge">✓ 100% Refund</span></div>
+      </div>
+      <div class="pricing-row-item">
+        <div class="row-label">Visa Assistance & Appointment Fee</div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;color:#6b7a94;">Standard Rate</div>
+        <div class="row-value" style="border-left:2px solid rgba(245,158,11,0.3);border-right:2px solid rgba(245,158,11,0.3);background:rgba(245,158,11,0.02);color:#6b7a94;">Standard Rate</div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;"><span class="discount-badge" style="border-color:var(--primary);color:var(--primary);">50% OFF</span></div>
+      </div>
+      <div class="pricing-row-item">
+        <div class="row-label">Premium Travel Insurance</div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;color:#6b7a94;">Standard Rate</div>
+        <div class="row-value" style="border-left:2px solid rgba(245,158,11,0.3);border-right:2px solid rgba(245,158,11,0.3);background:rgba(245,158,11,0.02);color:#6b7a94;">Standard Rate</div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;"><span class="discount-badge" style="border-color:var(--primary);color:var(--primary);">50% OFF</span></div>
+      </div>
+      <div class="pricing-row-item">
+        <div class="row-label">Permits, City Tax & Tipping</div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;color:#6b7a94;">Standard Rate</div>
+        <div class="row-value" style="border-left:2px solid rgba(245,158,11,0.3);border-right:2px solid rgba(245,158,11,0.3);background:rgba(245,158,11,0.02);color:#6b7a94;">Standard Rate</div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;"><span class="discount-badge" style="border-color:var(--primary);color:var(--primary);">50% OFF</span></div>
+      </div>
+      <div class="pricing-row-item">
+        <div class="row-label">Philippine Travel Tax</div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;color:#6b7a94;">Standard Rate</div>
+        <div class="row-value" style="border-left:2px solid rgba(245,158,11,0.3);border-right:2px solid rgba(245,158,11,0.3);background:rgba(245,158,11,0.02);color:#6b7a94;">Standard Rate</div>
+        <div class="row-value" style="border-left:1px solid #e8edf5;"><span class="free-badge">100% FREE</span></div>
+      </div>
+    </div>
+    <!-- View Inclusions Link -->
+    <div class="pricing-view-link">
+      <a href="#inclusions">📄 View Inclusions, Exclusions & Optional Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- Inclusions, Exclusions & Optional Services -->
+<section class="inclusions-section" id="inclusions">
+  <div class="inclusions-header">
+    <span class="section-badge">PACKAGE DETAILS</span>
+    <h2>Inclusions, Exclusions & Optionals</h2>
+    <p>Everything you need to know about your Route T Deluxe package. Tap each category to explore.</p>
+  </div>
+  <div class="inclusions-content">
+    <div style="display:flex;flex-direction:column;gap:1.2rem;max-width:480px;margin:0 auto;">
+      <a href="#" onclick="openDetailPopup('inclusions');return false;" class="detail-link-btn green-btn">
+        <span class="detail-link-icon">✓</span>
+        <span class="detail-link-text">Package Inclusions<span class="detail-link-sub">Airfare, hotels, full board meals & more</span></span>
+        <span class="detail-link-arrow">→</span>
+      </a>
+      <a href="#" onclick="openDetailPopup('exclusions');return false;" class="detail-link-btn red-btn">
+        <span class="detail-link-icon">✕</span>
+        <span class="detail-link-text">Package Exclusions<span class="detail-link-sub">Permits, city tax & travel tax</span></span>
+        <span class="detail-link-arrow">→</span>
+      </a>
+      <a href="#" onclick="openDetailPopup('optionals');return false;" class="detail-link-btn blue-btn">
+        <span class="detail-link-icon">◎</span>
+        <span class="detail-link-text">Optional Services<span class="detail-link-sub">Visa assistance, insurance & upgrades</span></span>
+        <span class="detail-link-arrow">→</span>
+      </a>
+    </div>
+    <!-- CTA -->
+    <div class="inclusions-cta">
+      <a href="#reservation-form" class="btn btn-accent">Reserve Your Slot →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Reservation Form -->
+<section class="reservation" id="reservation-form" style="text-align:center;">
+  <span class="section-badge">Secure Your Slot Today</span>
+  <h2>Route T Deluxe Reservation Form</h2>
+  <p class="section-sub">Please provide your exact details as they appear on your passport. No payment is required immediately to place a temporary hold.</p>
+
+  <div class="form-card" style="text-align:left;">
+    <form id="reservation-form-el" onsubmit="return handleSubmit(event)">
+      <!-- Primary Traveler -->
+      <div class="form-grid">
+        <div class="form-group"><label>First Name *</label><input type="text" id="firstName" placeholder="e.g. JUAN" required></div>
+        <div class="form-group"><label>Middle Name</label><input type="text" id="middleName" placeholder="e.g. CARLOS"></div>
+        <div class="form-group"><label>Last Name *</label><input type="text" id="lastName" placeholder="e.g. DELA CRUZ" required></div>
+      </div>
+      <div class="form-grid-2">
+        <div class="form-group"><label>Suffix</label><select id="suffix"><option>None</option><option>Jr.</option><option>Sr.</option><option>II</option><option>III</option></select></div>
+        <div class="form-group"><label>Gender *</label><select id="gender" required><option value="">Select Gender</option><option>Male</option><option>Female</option></select></div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group"><label>Date of Birth *</label><input type="date" id="dob" required onchange="recalculate()"></div>
+        <div class="form-group"><label>Contact Number *</label><input type="tel" id="contactNo" placeholder="e.g. +63 917 123 4567" required></div>
+        <div class="form-group"><label>Email Address *</label><input type="email" id="email" placeholder="e.g. juan.delacruz@gmail.com" required></div>
+      </div>
+      <div class="form-grid-2">
+        <div class="form-group"><label>Number of Travelers</label><select id="travelersCount" onchange="updateTravelers()"><option value="1">1 Person</option><option value="2">2 Persons</option><option value="3">3 Persons</option><option value="4">4 Persons</option><option value="5">5 Persons</option><option value="6">6 Persons</option><option value="7">7 Persons</option><option value="8">8 Persons</option><option value="9">9 Persons</option><option value="10">10 Persons</option><option value="11">11 Persons</option><option value="12">12 Persons</option><option value="13">13 Persons</option><option value="14">14 Persons</option><option value="15">15 Persons</option><option value="16">16 Persons</option><option value="17">17 Persons</option><option value="18">18 Persons</option><option value="19">19 Persons</option><option value="20">20 Persons</option></select></div>
+        <div class="form-group"><label>Travel Date *</label>
+          <select id="travelDate" required onchange="recalculate()">
+            <option value="">Select Travel Date</option>
+            <option value="2026-05-27">May 27 – Jun 6, 2026 (11 Days)</option>
+            <option value="2026-12-11">Dec 11 – 21, 2026 (11 Days)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-grid-2">
+        <div class="form-group"><label>Travel Consultant *</label><select id="travelConsultant" required><option value="">Select your Travel Consultant</option><option value="Genesis">Genesis</option><option value="Aila">Aila</option><option value="Angel">Angel</option><option value="Andrea">Andrea</option><option value="Sel">Sel</option></select></div>
+      </div>
+
+      <!-- Additional Travelers -->
+      <div class="additional-travelers" id="additional-travelers" style="display:none;">
+        <h4>👥 Additional Traveler Details</h4>
+        <div class="sub">Please provide details for each additional traveler as they appear on their passport.</div>
+        <div id="additional-travelers-list"></div>
+      </div>
+
+      <!-- Package Type -->
+      <div class="toggle-section">
+        <div class="toggle-label">✈️ Package Type *</div>
+        <div class="toggle-group">
+          <div class="toggle-option active" data-value="full" onclick="selectPackage('full')">
+            <div class="toggle-title">Full Package</div>
+            <div class="toggle-sub">With Airfare</div>
+            <div class="toggle-price">₱120,000</div>
+          </div>
+          <div class="toggle-option" data-value="land" onclick="selectPackage('land')">
+            <div class="toggle-title">Land Arrangement Only</div>
+            <div class="toggle-sub">No Airfare & Airport Transfer</div>
+            <div class="toggle-price">₱90,000</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Scheme -->
+      <div class="toggle-section">
+        <div class="toggle-label">💳 Preferred Payment Scheme *</div>
+        <div class="toggle-group-3">
+          <div class="toggle-option active" data-value="installment" onclick="selectPayment('installment')">
+            <div class="toggle-title">Monthly Installment</div>
+          </div>
+          <div class="toggle-option" data-value="downpayment" onclick="selectPayment('downpayment')">
+            <div class="toggle-title">₱50k Down</div>
+          </div>
+          <div class="toggle-option" data-value="cash" onclick="selectPayment('cash')">
+            <div class="toggle-title">Full Cash</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Installment Preview -->
+      <div class="installment-preview" id="installment-preview"></div>
+
+      <!-- Pricing Summary -->
+      <div class="pricing-summary" id="pricing-summary" style="display:none;"></div>
+
+      <!-- Notes -->
+      <div class="form-group" style="margin-bottom:1.5rem;">
+        <label>Special Requests</label>
+        <textarea id="notes" rows="3" placeholder="Any special requests or additional traveler names..."></textarea>
+      </div>
+
+      <!-- Freebie Section -->
+      <div class="form-group" id="freebieSection" style="margin-bottom:1.5rem;display:none;">
+        <label style="color:#16a34a;font-weight:800;">🎁 FREEBIES</label>
+        <div id="freebieContent" style="background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:2px solid #a7f3d0;border-radius:0.75rem;padding:1rem 1.25rem;"></div>
+      </div>
+
+      <!-- Submit -->
+      <div class="submit-section">
+        <div class="checkbox-row">
+          <input type="checkbox" id="agree" required>
+          <label for="agree">I confirm that all details provided are correct and accurate as they appear on my passport. I understand that a temporary hold will be placed and no payment is required at this time.</label>
+        </div>
+        <button type="submit" class="submit-btn" id="submit-btn">Submit Reservation Request ✨</button>
+        <div class="secure-note">🔒 Secure Submission. Your details are fully protected.</div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Discover Group</h4>
+      <p>Discover Group of Travel Services Incorporated is a fully registered, licensed premier travel agency crafting exquisite, seamlessly curated group journeys across Europe, Asia, and the Americas.</p>
+    </div>
+    <div>
+      <h4>Sales Department</h4>
+      <p>📞 0919-394-6919<br>📞 0960-312-3856<br>📞 0960-582-7673</p>
+    </div>
+    <div>
+      <h4>Visa & Support</h4>
+      <p>📞 0960-312-3656<br>📞 0962-373-6463<br>📞 0962-373-6465</p>
+    </div>
+    <div>
+      <h4>Office Location</h4>
+      <p>📍 22nd Floor, The Upper Class Tower, Quezon Ave & Sct. Reyes Corner, Diliman, Quezon City, Metro Manila</p>
+      <p style="margin-top:0.5rem;">✉️ inquiry@discovergrp.com<br>✉️ traveldesk@discovergrp.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Discover Group of Travel Services Incorporated. All Rights Reserved.</div>
+</footer>
+
+<!-- Full Cash Modal -->
+<div class="modal-overlay" id="fullcash-modal" onclick="closeModalOutside(event)">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('fullcash-modal')">&times;</button>
+    <div class="modal-icon blue">✨</div>
+    <div class="modal-title">Maximize Your Savings</div>
+    <div class="modal-subtitle">₱120,000 Full Cash Payment Scheme</div>
+    <div class="modal-card blue">
+      <p style="font-size:0.7rem;font-weight:700;color:#6b7a94;text-transform:uppercase;letter-spacing:0.1em;">Hassle-Free Full Payment</p>
+      <p style="font-size:2rem;font-weight:900;color:var(--primary);margin:0.25rem 0;">₱120,000</p>
+      <p style="font-size:0.85rem;color:#6b7a94;line-height:1.6;margin-top:0.75rem;">Secure your slot and lock in the <strong style="color:var(--primary);">maximum savings instantly</strong> by settling the full amount.</p>
+      <div class="check-note">✓ No future installments. Zero payment worries.</div>
+    </div>
+    <p class="modal-note">*Note: Fully protected by our 100% refund guarantee in case of visa denial.</p>
+    <button class="modal-btn blue" onclick="closeModal('fullcash-modal');selectPayment('cash');">Select Full Cash & Reserve Slot</button>
+  </div>
+</div>
+
+<!-- Down Payment Modal -->
+<div class="modal-overlay" id="downpayment-modal" onclick="closeModalOutside(event)">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('downpayment-modal')">&times;</button>
+    <div class="modal-icon gold">📅</div>
+    <div class="modal-title">Down Payment Schedule</div>
+    <div class="modal-subtitle">₱50,000 Down Payment Scheme terms & guidelines</div>
+    <div class="modal-card gold">
+      <div class="step-row">
+        <div class="step-num gold">1</div>
+        <div>
+          <div class="step-label">Initial Down Payment</div>
+          <div class="step-amount gold">₱50,000</div>
+          <div class="step-desc">Secure your slot! Must be settled <strong style="color:var(--primary);">before the promo ends or all slots are taken</strong>.</div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="step-row">
+        <div class="step-num gold">2</div>
+        <div>
+          <div class="step-label">Remaining Balance</div>
+          <div class="step-amount blue">₱70,000</div>
+          <div class="step-desc">Due <strong style="color:var(--primary);">not later than 90 days before travel date</strong> or upon release of your visa result.</div>
+          <div class="step-note">⚠️ Note: Visa application process starts at least 6 months before the travel date.</div>
+        </div>
+      </div>
+    </div>
+    <p class="modal-note">*Note: Fully protected by our 100% refund guarantee in case of visa denial.</p>
+    <button class="modal-btn gold" onclick="closeModal('downpayment-modal');selectPayment('downpayment');">Select Down Payment & Reserve Slot</button>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ==================== ITINERARY DATA ====================
+const ITINERARY = [
+  { day: 1, title: "Departure Manila – Istanbul", city: "istanbul", description: "Depart from <strong>Ninoy Aquino International Airport (NAIA)</strong> for your flight to <strong>Istanbul Airport</strong>.", airline: "Philippine Airlines, Turkish Airlines or similar", highlights: ["Exciting journey begins", "Premium inflight services"], meals: null, image: null, travelTime: null },
+  { day: 2, title: "Arrival Istanbul", city: "istanbul", description: "Welcome to Istanbul, a city bursting with culture, color, and history! After a smooth airport arrival, meet your local representative and head straight to your hotel for check-in.<br><br>Use the rest of the day to relax, refresh, and recover from your long-haul flight — or wander to nearby cafés and shops for your first taste of Turkish hospitality.", highlights: ["Welcome to Türkiye", "Hotel check-in & rest", "Free time to explore nearby"], meals: "Dinner included", nights: "Overnight in Istanbul", image: null, travelTime: null },
+  { day: 3, title: "Istanbul – Çanakkale", city: "canakkale", description: "Wake up energized and enjoy breakfast before starting your official Turkish adventure. Begin with a delightful orientation tour of the Old City — discover the serene beauty of the <strong>Blue Mosque</strong>, walk across the historic <strong>Hippodrome</strong>, and take postcard-perfect photos of the iconic <strong>Hagia Sophia</strong>.<br><br>After lunch, continue your journey to <strong>Çanakkale</strong>, a charming coastal city by the Dardanelles Strait. Upon arrival, relive cinematic history as you see the impressive <strong>Hollywood Troy Horse</strong> used in the movie Troy.<br><br>Check in at your hotel, enjoy dinner, and rest for the night in Çanakkale.", highlights: ["Blue Mosque orientation tour", "Historic Hippodrome", "Iconic Hagia Sophia", "Hollywood Troy Horse in Çanakkale"], meals: "Breakfast, Lunch & Dinner included", nights: "Overnight in Çanakkale", image: null, travelTime: "Istanbul – Çanakkale: 5hrs" },
+  { day: 4, title: "Çanakkale – Pergamon – Kuşadası", city: "kusadasi", description: "Begin your day by exploring the ancient wonders of <strong>Pergamon</strong>, a historic hilltop city known for its impressive Acropolis. Walk through the <strong>Temple of Trajan</strong>, the <strong>Upper Agora</strong>, and the remains of the Royal Palaces. Take in sweeping views from the dramatic <strong>Pergamon Theater</strong>, one of the steepest of its kind in the ancient world. Visit the site of the famed <strong>Library of Pergamon</strong> and the foundations of the <strong>Altar of Zeus</strong>.<br><br>After lunch, continue to the seaside gem of <strong>Kuşadası</strong>. Visit a local Turkish Delight & Olive Oil shop — perfect for tasting authentic flavors and picking up unique treats from the region.<br><br>Enjoy dinner and relax at your hotel in Kuşadası.", highlights: ["Temple of Trajan & Upper Agora", "Royal Palaces of Pergamon", "Dramatic Pergamon Theater", "Library of Pergamon & Altar of Zeus", "Turkish Delight & Olive Oil shop in Kuşadası"], meals: "Breakfast, Lunch & Dinner included", nights: "Overnight in Kuşadası", image: null, travelTime: "Çanakkale – Pergamon: 3hrs | Pergamon – Kuşadası: 2hrs" },
+  { day: 5, title: "Kuşadası – Pamukkale", city: "pamukkale", description: "Fuel up with breakfast before visiting a <strong>Turkish Leather Fashion House</strong> for an exciting live showcase of modern craftsmanship. Continue your journey to the world-renowned <strong>Ephesus Ancient City</strong>, where marble streets, grand theaters, and ancient temples paint a vivid picture of Roman life.<br><br>Enjoy lunch before traveling to <strong>Pamukkale</strong>, famous for its gleaming white travertine terraces known as <strong>Cotton Castle</strong>. Wander through the ancient spa city of <strong>Hierapolis</strong>, where Romans once bathed in healing waters.<br><br>Check in at your thermal hotel, enjoy a delicious dinner, and soak in the rejuvenating hot spring pools — a highlight of the day!", highlights: ["Turkish Leather Fashion House showcase", "Ephesus Ancient City marble streets", "Pamukkale Cotton Castle travertines", "Hierapolis ancient spa city", "Thermal hotel hot spring pools"], meals: "Breakfast, Lunch & Dinner included", nights: "Overnight in Pamukkale", image: null, travelTime: "Kuşadası – Pamukkale: 3hrs" },
+  { day: 6, title: "Pamukkale – Konya – Cappadocia", city: "cappadocia", description: "After breakfast, drive to Konya and proceed directly to the <strong>Caravanserai</strong>, a 13th-century Silk Road fortress that once sheltered traders and travelers. Here, guests can watch the mesmerizing <strong>Whirling Dervishes</strong> ceremony. After the stop, continue the journey onward to <strong>Cappadocia</strong>.<br><br>Arrive in Cappadocia and enjoy dinner before settling into your hotel for the night.", highlights: ["13th-century Caravanserai on the Silk Road", "Whirling Dervishes ceremony in Konya", "Arrival in magical Cappadocia"], meals: "Breakfast, Lunch & Dinner included", nights: "Overnight in Cappadocia", image: null, travelTime: "Pamukkale – Konya: 4hrs | Konya – Cappadocia: 4hrs" },
+  { day: 7, title: "Full Day in Cappadocia", city: "cappadocia", description: "Start the day with breakfast and then delve into a mysterious <strong>Underground City</strong>, a labyrinth carved deep into volcanic rock. Admire the stunning views of <strong>Pigeon Valley</strong> before visiting a Carpet Viewing Center to discover intricate weaving traditions.<br><br>After lunch, head to <strong>Uchisar Castle</strong> for breathtaking panoramas, then explore the fantastically shaped formations of <strong>Camel Stone Valley</strong>. Cap off your day with visits to local pottery and turquoise shops.<br><br>Dinner and overnight stay in Cappadocia.", highlights: ["Underground City labyrinth", "Pigeon Valley panoramic views", "Carpet Viewing Center", "Uchisar Castle panoramas", "Camel Stone Valley formations", "Local pottery & turquoise shops"], optionalTours: ["Hot Air Balloon Ride", "Jeep Safari", "Turkish Night Show"], meals: "Breakfast, Lunch & Dinner included", nights: "Overnight in Cappadocia", image: null, travelTime: null },
+  { day: 8, title: "Cappadocia – Ankara – Bolu", city: "ankara", description: "After breakfast, travel to <strong>Ankara</strong>, stopping en route at the surreal <strong>Salt Lake</strong>, whose shimmering white surface creates unforgettable photographs.<br><br>Enjoy lunch in Ankara, then visit the impressive <strong>Mausoleum of Mustafa Kemal Atatürk</strong>, an architectural masterpiece dedicated to the founder of modern Türkiye.<br><br>After the visit, proceed to <strong>Bolu</strong> for dinner and your overnight stay.", highlights: ["Salt Lake photo stop", "Mausoleum of Mustafa Kemal Atatürk", "Ankara city visit", "Overnight in Bolu"], meals: "Breakfast, Lunch & Dinner included", nights: "Overnight in Bolu", image: null, travelTime: "Cappadocia – Ankara: 4hrs | Ankara – Bolu: 2hrs" },
+  { day: 9, title: "Bolu – Istanbul", city: "istanbul", description: "After breakfast, drive back to Istanbul. Enjoy lunch first, then embark on a serene <strong>Bosphorus Cruise</strong>, where Europe and Asia meet.<br><br>Marvel at Ottoman palaces, waterfront mansions, and iconic bridges as you glide along the strait. Afterwards, immerse yourself in the vibrant energy of the <strong>Spice Bazaar</strong>, offering colorful spices, tea blends, dried fruits, and local delicacies.<br><br>Enjoy dinner and spend your final night in Istanbul.", highlights: ["Scenic Bosphorus Cruise", "Ottoman palaces & waterfront mansions", "Spice Bazaar exploration", "Final night in Istanbul"], meals: "Breakfast, Lunch & Dinner included", nights: "Final night in Istanbul", image: null, travelTime: "Bolu – Istanbul: 4hrs" },
+  { day: 10, title: "Departure Istanbul – Manila", city: "istanbul", description: "Get ready to fly back from <strong>Istanbul Airport</strong> to <strong>Manila Ninoy Aquino International Airport (NAIA)</strong>.", airline: "Philippine Airlines, Turkish Airlines or similar", highlights: ["Airport transfer included", "Flight back to Manila"], meals: "Breakfast included", image: null, travelTime: null },
+  { day: 11, title: "Arrival Manila", city: "istanbul", description: "Arrive in Manila. End of Tour.", highlights: ["Safe arrival home", "Unforgettable memories"], meals: null, image: null, travelTime: null }
+];
+
+// ==================== TRAVEL DATES ====================
+const TRAVEL_DATES = {
+  "2026-05-27": { start: "2026-05-27", end: "2026-06-06" },
+  "2026-12-11": { start: "2026-12-11", end: "2026-12-21" }
+};
+
+// ==================== STATE ====================
+let selectedDay = 0;
+let selectedPackage = 'full';
+let selectedPayment = 'installment';
+let promoCodeVerified = false;
+
+// ==================== ITINERARY RENDERING ====================
+function initItinerary() {
+  const tabsEl = document.getElementById('day-tabs');
+  tabsEl.innerHTML = ITINERARY.map((d, i) =>
+    `<span class="day-tab${i === 0 ? ' active' : ''}" onclick="selectDay(${i})">Day ${String(d.day).padStart(2,'0')}</span>`
+  ).join('');
+  renderDay(0);
+}
+
+function selectDay(index) {
+  selectedDay = index;
+  document.querySelectorAll('.day-tab').forEach((t, i) => t.classList.toggle('active', i === index));
+  const city = ITINERARY[index].city;
+  document.querySelectorAll('.city-tab').forEach(t => t.classList.toggle('active', t.dataset.city === city));
+  renderDay(index);
+}
+
+function renderDay(index) {
+  const d = ITINERARY[index];
+  let html = `<div class="day-label">DAY ${String(d.day).padStart(2,'0')}</div>`;
+  html += `<h3>${d.title}</h3>`;
+  html += `<div class="description">${d.description}</div>`;
+  if (d.image) {
+    html += `<img class="collage-img" src="${d.image}" alt="${d.title}" loading="lazy">`;
+  }
+  if (d.highlights && d.highlights.length) {
+    html += `<div class="info-section"><div class="info-title">Day Highlights:</div><ul class="info-list">${d.highlights.map(h => `<li>${h}</li>`).join('')}</ul></div>`;
+  }
+  if (d.optionalTours) {
+    html += `<div class="optional-box"><div class="opt-title">Optional Tours/Activities:</div>${d.optionalTours.map(t => `<p>${t}</p>`).join('')}</div>`;
+  }
+  if (d.meals) {
+    html += `<div class="info-section"><div class="info-title">Meals:</div><span class="meals-badge">🍽️ ${d.meals}</span></div>`;
+  }
+  if (d.nights) {
+    html += `<div style="margin-top:0.5rem;font-size:0.8rem;color:var(--accent);font-weight:600;">🏨 ${d.nights}</div>`;
+  }
+  if (d.airline) {
+    html += `<div style="margin-top:0.5rem;font-size:0.8rem;color:var(--muted);font-style:italic;">✈️ ${d.airline}</div>`;
+  }
+  if (d.travelTime) {
+    html += `<div class="travel-time">🕐 ${d.travelTime}</div>`;
+  }
+  html += `<div class="note-text">Note: Rates for optional activities or tours are valid at the time of purchase and may change if purchased at a later time.</div>`;
+  document.getElementById('day-content').innerHTML = html;
+}
+
+document.querySelectorAll('.city-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const city = tab.dataset.city;
+    const firstDay = ITINERARY.findIndex(d => d.city === city);
+    if (firstDay >= 0) selectDay(firstDay);
+  });
+});
+
+// ==================== PRICING LOGIC ====================
+function getAgeAtDate(dob, refDate) {
+  const birth = new Date(dob);
+  const ref = new Date(refDate);
+  let years = ref.getFullYear() - birth.getFullYear();
+  let months = ref.getMonth() - birth.getMonth();
+  if (ref.getDate() < birth.getDate()) months--;
+  if (months < 0) { years--; months += 12; }
+  return { years, totalMonths: years * 12 + months };
+}
+
+function classifyAge(dob, startDate, endDate) {
+  if (!dob || !startDate || !endDate) return 'adult';
+  const { totalMonths } = getAgeAtDate(dob, endDate);
+  const { years: yearsAtStart } = getAgeAtDate(dob, startDate);
+  const { years: yearsAtEnd } = getAgeAtDate(dob, endDate);
+  if (totalMonths >= 0 && totalMonths <= 23) return 'infant';
+  if (yearsAtEnd >= 2 && yearsAtEnd < 6) return 'child';
+  if (yearsAtStart >= 60) return 'senior';
+  return 'adult';
+}
+
+function getCategoryRate(category, standardRate) {
+  switch(category) {
+    case 'infant': return { rate: 50000, discount: standardRate - 50000 };
+    case 'child': return { rate: standardRate - 5000, discount: 5000 };
+    case 'senior': return { rate: standardRate - 5000, discount: 5000 };
+    default: return { rate: standardRate, discount: 0 };
+  }
+}
+
+function getCategoryLabel(cat) {
+  switch(cat) {
+    case 'infant': return 'Infant';
+    case 'child': return 'Child';
+    case 'senior': return 'Senior';
+    default: return 'Adult';
+  }
+}
+
+function formatPHP(amount) {
+  return '₱' + amount.toLocaleString('en-US');
+}
+
+// ==================== FORM LOGIC ====================
+function updateTravelers() {
+  const count = parseInt(document.getElementById('travelersCount').value);
+  const container = document.getElementById('additional-travelers');
+  const list = document.getElementById('additional-travelers-list');
+  if (count <= 1) {
+    container.style.display = 'none';
+    list.innerHTML = '';
+  } else {
+    container.style.display = 'block';
+    let html = '';
+    for (let i = 2; i <= Math.min(count, 6); i++) {
+      html += `<div class="traveler-block">
+        <div class="traveler-label">Traveler ${i}</div>
+        <div class="form-grid">
+          <div class="form-group"><label>First Name *</label><input type="text" class="traveler-field" data-idx="${i}" data-field="firstName" placeholder="FIRST NAME" required></div>
+          <div class="form-group"><label>Middle Name</label><input type="text" class="traveler-field" data-idx="${i}" data-field="middleName" placeholder="MIDDLE NAME"></div>
+          <div class="form-group"><label>Last Name *</label><input type="text" class="traveler-field" data-idx="${i}" data-field="lastName" placeholder="LAST NAME" required></div>
+        </div>
+        <div class="form-grid-2">
+          <div class="form-group"><label>Suffix</label><select class="traveler-field" data-idx="${i}" data-field="suffix"><option>None</option><option>Jr.</option><option>Sr.</option><option>II</option><option>III</option></select></div>
+          <div class="form-group"><label>Gender *</label><select class="traveler-field" data-idx="${i}" data-field="gender" required><option value="">Select Gender</option><option>Male</option><option>Female</option></select></div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group"><label>Date of Birth *</label><input type="date" class="traveler-field" data-idx="${i}" data-field="dob" required onchange="recalculate()"></div>
+          <div class="form-group"><label>Contact Number *</label><input type="tel" class="traveler-field" data-idx="${i}" data-field="contact" placeholder="+63 9XX XXX XXXX" required></div>
+          <div class="form-group"><label>Email Address *</label><input type="email" class="traveler-field" data-idx="${i}" data-field="email" placeholder="email@example.com" required></div>
+        </div>
+      </div>`;
+    }
+    list.innerHTML = html;
+  }
+  recalculate();
+  updateFreebies();
+}
+
+function selectPackage(type) {
+  selectedPackage = type;
+  document.querySelectorAll('.toggle-group .toggle-option').forEach(el => {
+    el.classList.toggle('active', el.dataset.value === type);
+  });
+  recalculate();
+}
+
+function selectPayment(type) {
+  selectedPayment = type;
+  document.querySelectorAll('.toggle-group-3 .toggle-option').forEach(el => {
+    el.classList.toggle('active', el.dataset.value === type);
+  });
+  recalculate();
+}
+
+function updateFreebies() {
+  const section = document.getElementById('freebieSection');
+  const content = document.getElementById('freebieContent');
+  if (!section || !content) return;
+  section.style.display = 'none';
+  content.innerHTML = '';
+}
+
+function recalculate() {
+  const travelDateId = document.getElementById('travelDate').value;
+  const dates = TRAVEL_DATES[travelDateId];
+  if (!dates) return;
+
+  const standardRate = selectedPackage === 'full' ? 120000 : 90000;
+  const count = parseInt(document.getElementById('travelersCount').value);
+  const primaryDob = document.getElementById('dob').value;
+  const pFirst = document.getElementById('firstName').value || '';
+  const pMiddle = document.getElementById('middleName').value || '';
+  const pLast = document.getElementById('lastName').value || '';
+  const pSuffix = document.getElementById('suffix').value || 'None';
+  const primaryFullName = [pFirst, pMiddle, pLast, pSuffix !== 'None' ? pSuffix : ''].filter(Boolean).join(' ').trim() || 'Primary Traveler';
+
+  const participants = [{ name: primaryFullName, dob: primaryDob }];
+  for (let i = 2; i <= count; i++) {
+    const dobEl = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="dob"]`);
+    const fnEl = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="firstName"]`);
+    const mnEl = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="middleName"]`);
+    const lnEl = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="lastName"]`);
+    const sfEl = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="suffix"]`);
+    const fn = fnEl ? fnEl.value : '';
+    const mn = mnEl ? mnEl.value : '';
+    const ln = lnEl ? lnEl.value : '';
+    const sf = sfEl && sf
+El && sfEl.value !== 'None' ? sfEl.value : '';
+    const fullName = [fn, mn, ln, sf].filter(Boolean).join(' ').trim() || `Traveler ${i}`;
+    participants.push({ name: fullName, dob: dobEl ? dobEl.value : '' });
+  }
+
+  const classified = participants.map((p, idx) => {
+    const category = classifyAge(p.dob, dates.start, dates.end);
+    const { rate, discount } = getCategoryRate(category, standardRate);
+    return { ...p, index: idx, category, rate, discount, isFree: false, finalRate: rate };
+  });
+
+  const grandTotal = classified.reduce((sum, p) => sum + p.finalRate, 0);
+  const totalDiscount = classified.reduce((sum, p) => sum + p.discount, 0);
+
+  const summaryEl = document.getElementById('pricing-summary');
+  if (primaryDob || count > 1) {
+    summaryEl.style.display = 'block';
+    let html = `<h4>💰 Pricing Summary</h4>`;
+    classified.forEach(p => {
+      const label = p.name;
+      const catBadge = p.category !== 'adult' ? `<span class="badge">${getCategoryLabel(p.category)}</span>` : '';
+      const originalShow = p.discount > 0 ? `<span class="original">${formatPHP(standardRate)}</span>` : '';
+      const discountShow = p.discount > 0 ? `<span class="discount-text">(-${formatPHP(p.discount)})</span>` : '';
+      html += `<div class="pricing-row"><span class="label">${label} ${catBadge}</span><span class="value">${originalShow}${formatPHP(p.finalRate)}${discountShow}</span></div>`;
+    });
+    html += `<div class="pricing-row total"><span class="label">Total Cost (${count} traveler${count > 1 ? 's' : ''})</span><span class="value">${formatPHP(grandTotal)}</span></div>`;
+    if (totalDiscount > 0) {
+      html += `<div class="savings-banner">🎉 You save ${formatPHP(totalDiscount)} with discounts!</div>`;
+    }
+    html += `<div class="pricing-note">Infants (0–23 months): Flat ₱50,000. Children (2–5): ₱5,000 off. Seniors (60+): ₱5,000 off. Discounts applied automatically to the Full Package.</div>`;
+    summaryEl.innerHTML = html;
+  } else {
+    summaryEl.style.display = 'none';
+  }
+
+  renderInstallmentPreview(grandTotal, travelDateId, classified);
+  updateFreebies();
+}
+
+function renderInstallmentPreview(total, travelDateId, classified) {
+  const previewEl = document.getElementById('installment-preview');
+  const count = parseInt(document.getElementById('travelersCount').value || '1');
+
+  function buildDiscountBreakdown(classifiedData) {
+    if (!classifiedData || classifiedData.length === 0) return '';
+    const hasDiscounts = classifiedData.some(p => p.category !== 'adult');
+    if (!hasDiscounts) return '';
+    let html = '<div class="discount-breakdown">';
+    html += '<p class="discount-breakdown-title">🏷️ Age-Based Pricing:</p>';
+    classifiedData.forEach(p => {
+      const badge = p.category !== 'adult' ? `<span class="badge badge-${p.category}">${getCategoryLabel(p.category)}</span>` : '';
+      const discountNote = p.category === 'infant' ? `<span class="discount-text">(Flat ₱50,000)</span>` : p.discount > 0 ? `<span class="discount-text">(-${formatPHP(p.discount)} off)</span>` : '';
+      html += `<div class="discount-row"><span>${p.name || 'Traveler ' + (p.index + 1)} ${badge}</span><span>${formatPHP(p.finalRate)}/head ${discountNote}</span></div>`;
+    });
+    html += '</div>';
+    return html;
+  }
+
+  if (selectedPayment === 'downpayment') {
+    previewEl.style.display = 'block';
+    let html = `<h4>💳 Down Payment Scheme</h4>`;
+    html += `<div class="note">Secure your slot with ₱50,000 down payment per head. The remaining balance must be settled not later than 90 days before travel date or upon release of your visa result.</div>`;
+    html += buildDiscountBreakdown(classified);
+    const perHead = total / count;
+    const downPayment = 50000;
+    const balance = perHead - downPayment;
+    html += `<div class="installment-row"><span class="date">Down Payment (per head)</span><span class="amount">${formatPHP(downPayment)}</span></div>`;
+    html += `<div class="installment-row"><span class="date">Balance (per head) — due 90 days before travel or upon visa approval</span><span class="amount">${formatPHP(balance)}</span></div>`;
+    html += `<div class="installment-row total"><span class="date">Grand Total</span><span class="amount">${formatPHP(total)}</span></div>`;
+    previewEl.innerHTML = html;
+    return;
+  }
+
+  if (selectedPayment !== 'installment') {
+    previewEl.style.display = 'none';
+    return;
+  }
+  previewEl.style.display = 'block';
+
+  const dates = TRAVEL_DATES[travelDateId];
+  if (!dates) return;
+
+  const travelStart = new Date(dates.start);
+  const deadline = new Date(travelStart);
+  deadline.setMonth(deadline.getMonth() - 3);
+
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const startMonth = new Date(tomorrow.getFullYear(), tomorrow.getMonth(), tomorrow.getDate());
+  let months = 0;
+  let checkDate = new Date(startMonth);
+  while (checkDate <= deadline) {
+    months++;
+    checkDate.setMonth(checkDate.getMonth() + 1);
+  }
+  if (months < 1) months = 1;
+
+  const hasDiscounts = classified && classified.some(p => p.category !== 'adult');
+  let html = `<h4>📅 Your Installment Plan (${months} months)</h4>`;
+  html += `<div class="note">Fully paid 3 months before departure. Monthly payments divided equally:</div>`;
+
+  if (hasDiscounts) {
+    html += buildDiscountBreakdown(classified);
+    html += '<div class="installment-divider"></div>';
+    classified.forEach(p => {
+      const monthlyAmt = Math.ceil(p.finalRate / months);
+      const badge = p.category !== 'adult' ? ` <span class="badge badge-${p.category}">${getCategoryLabel(p.category)}</span>` : '';
+      html += `<div class="installment-sub-header">${p.name || 'Traveler ' + (p.index + 1)}${badge} — ${formatPHP(monthlyAmt)}/month</div>`;
+    });
+    html += '<div class="installment-divider"></div>';
+    let payDate = new Date(startMonth);
+    const totalMonthly = classified.reduce((sum, p) => sum + Math.ceil(p.finalRate / months), 0);
+    for (let i = 0; i < months; i++) {
+      const dateStr = payDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      html += `<div class="installment-row"><span class="date">${dateStr}</span><span class="amount">${formatPHP(totalMonthly)} total</span></div>`;
+      payDate.setMonth(payDate.getMonth() + 1);
+    }
+    html += `<div class="installment-row total"><span class="date">Total (${months} months)</span><span class="amount">${formatPHP(total)}</span></div>`;
+  } else {
+    const perHead = total / count;
+    const monthlyAmount = Math.ceil(perHead / months);
+    let payDate = new Date(startMonth);
+    for (let i = 0; i < months; i++) {
+      const dateStr = payDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      html += `<div class="installment-row"><span class="date">${dateStr}</span><span class="amount">${formatPHP(monthlyAmount)} per head</span></div>`;
+      payDate.setMonth(payDate.getMonth() + 1);
+    }
+    html += `<div class="installment-row total"><span class="date">Total (${months} months)</span><span class="amount">${formatPHP(perHead)} per head</span></div>`;
+  }
+  previewEl.innerHTML = html;
+}
+
+// ==================== FORM SUBMISSION ====================
+function handleSubmit(e) {
+  e.preventDefault();
+
+  const agree = document.getElementById('agree').checked;
+  if (!agree) {
+    showToast('Please confirm the checkbox before submitting.', 'error');
+    return false;
+  }
+
+  const data = {
+    firstName: document.getElementById('firstName').value,
+    middleName: document.getElementById('middleName').value,
+    lastName: document.getElementById('lastName').value,
+    suffix: document.getElementById('suffix').value,
+    gender: document.getElementById('gender').value,
+    dob: document.getElementById('dob').value,
+    contactNo: document.getElementById('contactNo').value,
+    email: document.getElementById('email').value,
+    travelersCount: document.getElementById('travelersCount').value,
+    travelDate: document.getElementById('travelDate').value,
+    travelConsultant: document.getElementById('travelConsultant').value,
+    packageType: selectedPackage,
+    paymentScheme: selectedPayment,
+    notes: document.getElementById('notes').value
+  };
+
+  if (!data.firstName || !data.lastName || !data.gender || !data.dob || !data.contactNo || !data.email || !data.travelConsultant) {
+    showToast('Please fill in all required fields.', 'error');
+    return false;
+  }
+
+  const travelDateSelect = document.getElementById('travelDate');
+  const travelDateLabel = travelDateSelect.options[travelDateSelect.selectedIndex].text;
+
+  const count = parseInt(data.travelersCount);
+  let message = `PRIMARY TRAVELER:\n`;
+  message += `Name: ${data.firstName} ${data.middleName} ${data.lastName} ${data.suffix !== 'None' ? data.suffix : ''}\n`;
+  message += `Gender: ${data.gender} | DOB: ${data.dob}\n`;
+  message += `Contact: ${data.contactNo} | Email: ${data.email}\n`;
+
+  if (count > 1) {
+    message += `\nADDITIONAL TRAVELERS:\n`;
+    for (let i = 2; i <= Math.min(count, 6); i++) {
+      const fn = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="firstName"]`);
+      const mn = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="middleName"]`);
+      const ln = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="lastName"]`);
+      const sf = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="suffix"]`);
+      const gn = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="gender"]`);
+      const db = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="dob"]`);
+      const ct = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="contact"]`);
+      const em = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="email"]`);
+      message += `\nTraveler ${i}: ${fn?fn.value:''} ${mn?mn.value:''} ${ln?ln.value:''} ${sf&&sf.value!=='None'?sf.value:''}\n`;
+      message += `  Gender: ${gn?gn.value:''} | DOB: ${db?db.value:''}\n`;
+      message += `  Contact: ${ct?ct.value:''} | Email: ${em?em.value:''}\n`;
+    }
+  }
+
+  if (data.notes) {
+    message += `\nNOTES: ${data.notes}`;
+  }
+
+  const summaryEl = document.getElementById('pricing-summary');
+  const totalEl = summaryEl ? summaryEl.querySelector('.pricing-row.total .value') : null;
+  const totalAmount = totalEl ? totalEl.textContent : `₱${(selectedPackage === 'full' ? 120000 : 90000) * count}`;
+
+  const dates = TRAVEL_DATES[data.travelDate];
+  const standardRate = selectedPackage === 'full' ? 120000 : 90000;
+
+  const allTravelers = [{
+    firstName: data.firstName,
+    middleName: data.middleName,
+    lastName: data.lastName,
+    suffix: data.suffix,
+    gender: data.gender,
+    dob: data.dob,
+    contact: data.contactNo,
+    email: data.email
+  }];
+  for (let i = 2; i <= Math.min(count, 6); i++) {
+    const fn = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="firstName"]`);
+    const mn = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="middleName"]`);
+    const ln = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="lastName"]`);
+    const sf = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="suffix"]`);
+    const gn = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="gender"]`);
+    const db = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="dob"]`);
+    const ct = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="contact"]`);
+    const em = document.querySelector(`.traveler-field[data-idx="${i}"][data-field="email"]`);
+    allTravelers.push({
+      firstName: fn ? fn.value : '',
+      middleName: mn ? mn.value : '',
+      lastName: ln ? ln.value : '',
+      suffix: sf ? sf.value : 'None',
+      gender: gn ? gn.value : '',
+      dob: db ? db.value : '',
+      contact: ct ? ct.value : '',
+      email: em ? em.value : ''
+    });
+  }
+  for (let i = 7; i <= count; i++) {
+    allTravelers.push({ firstName: `Traveler ${i}`, middleName: '', lastName: '(Details pending)', suffix: 'None', gender: '—', dob: '', contact: '—', email: '—' });
+  }
+
+  const participants = allTravelers.map((t, idx) => ({
+    name: [t.firstName, t.middleName, t.lastName].filter(Boolean).join(' ').trim() || `Traveler ${idx + 1}`,
+    dob: t.dob
+  }));
+  const classified = participants.map((p, idx) => {
+    const category = classifyAge(p.dob, dates.start, dates.end);
+    const { rate, discount } = getCategoryRate(category, standardRate);
+    return { ...p, index: idx, category, rate, discount, isFree: false, finalRate: rate };
+  });
+  const confirmGrandTotal = classified.reduce((sum, p) => sum + p.finalRate, 0);
+
+  lastBookingData = {
+    allTravelers,
+    classified,
+    grandTotal: confirmGrandTotal,
+    promoDiscount: 0,
+    count,
+    packageType: selectedPackage,
+    paymentScheme: selectedPayment,
+    travelDateId: data.travelDate,
+    travelDateLabel,
+    standardRate,
+    travelConsultant: document.getElementById('travelConsultant').value,
+    specialRequests: document.getElementById('notes').value || ''
+  };
+
+  const btn = document.getElementById('submit-btn');
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+
+  const formData = {
+    access_key: '7332ba6f-c90e-4d55-ac88-cf63c72e4e48',
+    subject: `New Route T Booking: ${data.firstName} ${data.middleName} ${data.lastName}${data.suffix ? ' ' + data.suffix : ''} - ${travelDateLabel}`,
+    from_name: `${data.firstName} ${data.middleName} ${data.lastName}${data.suffix ? ' ' + data.suffix : ''}`,
+    first_name: data.firstName,
+    middle_name: data.middleName,
+    last_name: data.lastName,
+    suffix: data.suffix || 'None',
+    gender: data.gender,
+    date_of_birth: data.dob,
+    email: data.email,
+    contact_number: data.contactNo,
+    travel_date: travelDateLabel,
+    package_type: selectedPackage === 'full' ? 'Full Package (₱120,000)' : 'Land Arrangement Only (₱90,000)',
+    payment_scheme: selectedPayment === 'installment' ? 'Monthly Installment' : selectedPayment === 'downpayment' ? '₱50K Down Payment' : 'Full Cash',
+    travelers_count: data.travelersCount + ' person(s)',
+    total_amount: totalAmount,
+    travel_consultant: document.getElementById('travelConsultant').value,
+    message: message,
+    review_approve_link: generateBookingLink()
+  };
+
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(formData)
+  })
+    .then(res => res.json())
+    .then(result => { showSuccessMessage(); })
+    .catch(function(error) { console.error('Web3Forms error:', error); showSuccessMessage(); });
+
+  return false;
+}
+
+function showToast(msg, type = 'success') {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.className = 'toast show' + (type === 'error' ? ' error' : '');
+  setTimeout(() => { toast.className = 'toast'; }, 4000);
+}
+
+let lastBookingData = null;
+let isAgentReviewMode = false;
+
+function compressSignature(dataUrl) {
+  return new Promise((resolve) => {
+    if (!dataUrl) { resolve(''); return; }
+    const img = new Image();
+    img.onload = function() {
+      const canvas = document.createElement('canvas');
+      canvas.width = 200; canvas.height = 80;
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, 200, 80);
+      ctx.drawImage(img, 0, 0, 200, 80);
+      resolve(canvas.toDataURL('image/jpeg', 0.3));
+    };
+    img.onerror = function() { resolve(''); };
+    img.src = dataUrl;
+  });
+}
+
+function generateBookingLink() {
+  if (!lastBookingData) return '';
+  const bd = lastBookingData;
+  const bookingPayload = {
+    t: bd.allTravelers.map(t => ({ f: t.firstName, m: t.middleName, l: t.lastName, s: t.suffix, g: t.gender, d: t.dob, c: t.contact, e: t.email })),
+    gt: bd.grandTotal, cnt: bd.count, pkg: bd.packageType, pay: bd.paymentScheme,
+    td: bd.travelDateId, tdl: bd.travelDateLabel, sr: bd.standardRate, tc: bd.travelConsultant,
+    pd: bd.promoDiscount || 0,
+    cl: bd.classified.map(c => ({ cat: c.category, rate: c.rate, disc: c.discount, free: c.isFree, fr: c.finalRate })),
+    cs: bd.compressedSignature || '', nr: bd.specialRequests || ''
+  };
+  const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(bookingPayload))));
+  return `https://discovergrp.github.io/routetdeluxe/?booking=${encoded}`;
+}
+
+function checkBookingUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const bookingParam = params.get('booking');
+  if (bookingParam && bookingParam !== 'encoded_data') {
+    try {
+      const json = decodeURIComponent(escape(atob(bookingParam)));
+      const bp = JSON.parse(json);
+      const allTravelers = bp.t.map(t => ({ firstName: t.f, middleName: t.m, lastName: t.l, suffix: t.s, gender: t.g, dob: t.d, contact: t.c, email: t.e }));
+      const classified = bp.cl.map((c, idx) => ({
+        name: [allTravelers[idx].firstName, allTravelers[idx].middleName, allTravelers[idx].lastName].filter(Boolean).join(' '),
+        dob: allTravelers[idx].dob, index: idx, category: c.cat, rate: c.rate, discount: c.disc, isFree: c.free, finalRate: c.fr
+      }));
+      lastBookingData = {
+        allTravelers, classified, grandTotal: bp.gt, promoDiscount: bp.pd, count: bp.cnt,
+        packageType: bp.pkg, paymentScheme: bp.pay, travelDateId: bp.td, travelDateLabel: bp.tdl,
+        standardRate: bp.sr, travelConsultant: bp.tc, clientSignature: bp.cs || '', specialRequests: bp.nr || ''
+      };
+      isAgentReviewMode = true;
+      setTimeout(() => { showSuccessMessage(); }, 300);
+    } catch(e) { console.error('Failed to parse booking URL:', e); }
+  }
+}
+
+function showSuccessMessage() {
+  const bd = lastBookingData;
+  if (!bd) return;
+
+  const leadName = `${bd.allTravelers[0].firstName} ${bd.allTravelers[0].middleName ? bd.allTravelers[0].middleName + ' ' : ''}${bd.allTravelers[0].lastName}${bd.allTravelers[0].suffix && bd.allTravelers[0].suffix !== 'None' ? ' ' + bd.allTravelers[0].suffix : ''}`;
+  document.title = `Booking Confirmation - ${leadName}`;
+
+  const now = new Date();
+  const refNum = `ROUTET-${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}-${String(Math.floor(Math.random()*9000)+1000)}`;
+  const dateStr = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+  let travelerRows = '';
+  bd.allTravelers.forEach((t, idx) => {
+    travelerRows += `<tr>
+      <td style="font-weight:700;">${idx + 1}</td>
+      <td class="font-bold">${t.firstName}</td>
+      <td>${t.middleName || '—'}</td>
+      <td class="font-bold">${t.lastName}</td>
+      <td>${t.suffix && t.suffix !== 'None' ? t.suffix : '—'}</td>
+      <td>${t.gender}</td>
+      <td class="mono">${t.contact || '—'}</td>
+      <td class="mono">${t.email || '—'}</td>
+      <td class="mono">${t.dob ? new Date(t.dob + 'T00:00:00').toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'}) : '—'}</td>
+    </tr>`;
+  });
+
+  let pricingRows = '';
+  let totalDiscount = 0;
+  bd.classified.forEach((p, idx) => {
+    const catLabel = p.category !== 'adult' ? ` (${getCategoryLabel(p.category)})` : '';
+    pricingRows += `<tr>
+      <td>${bd.allTravelers[idx].firstName + ' ' + bd.allTravelers[idx].lastName}${catLabel}</td>
+      <td class="text-right">${formatPHP(p.rate)}</td>
+      <td class="text-center">1</td>
+      <td class="text-right font-bold">${formatPHP(p.finalRate)}</td>
+    </tr>`;
+    totalDiscount += p.discount;
+  });
+  pricingRows += `<tr class="total-row"><td style="font-weight:900;">GRAND TOTAL</td><td></td><td class="text-center font-bold">${bd.count} pax</td><td class="text-right" style="font-size:1rem;">${formatPHP(bd.grandTotal)}</td></tr>`;
+
+  let paymentScheduleHtml = '';
+  if (bd.paymentScheme === 'installment') {
+    const dates = TRAVEL_DATES[bd.travelDateId];
+    const travelStart = new Date(dates.start);
+    const deadline = new Date(travelStart);
+    deadline.setMonth(deadline.getMonth() - 3);
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const startMonth = new Date(tomorrow.getFullYear(), tomorrow.getMonth(), tomorrow.getDate());
+    let months = 0;
+    let checkDate = new Date(startMonth);
+    while (checkDate <= deadline) { months++; checkDate.setMonth(checkDate.getMonth() + 1); }
+    if (months < 1) months = 1;
+    const perHead = bd.grandTotal / bd.count;
+    const monthlyAmount = Math.ceil(perHead / months);
+    let schedRows = '';
+    let payDate = new Date(startMonth);
+    for (let i = 0; i < months; i++) {
+      const dStr = payDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+      schedRows += `<tr><td style="text-align:center;">${i + 1}</td><td>${i === 0 ? 'First Payment' : 'Monthly Installment'}</td><td>${dStr}</td><td class="text-right font-bold">${formatPHP(monthlyAmount)}</td></tr>`;
+      payDate.setMonth(payDate.getMonth() + 1);
+    }
+    schedRows += `<tr class="total-row"><td></td><td style="font-weight:900;">TOTAL</td><td>Fully paid 3 months before departure</td><td class="text-right" style="font-size:0.95rem;">${formatPHP(perHead)} /head</td></tr>`;
+    paymentScheduleHtml = `
+      <div class="bc-section-title">Payment Schedule — Monthly Installment</div>
+      <table class="bc-pricing-table">
+        <thead><tr><th>#</th><th>Payment</th><th>Due Date</th><th style="text-align:right;">Amount (Per Head)</th></tr></thead>
+        <tbody>${schedRows}</tbody>
+      </table>
+      <p class="bc-vat-note">Note: Prompt payment ensures uninterrupted processing of your visa application and travel arrangements.</p>`;
+  } else if (bd.paymentScheme === 'downpayment') {
+    const perHead = bd.grandTotal / bd.count;
+    const balance = perHead - 50000;
+    paymentScheduleHtml = `
+      <div class="bc-section-title">Payment Schedule — ₱50K Down Payment</div>
+      <table class="bc-pricing-table">
+        <thead><tr><th>#</th><th>Payment</th><th>Due Date</th><th style="text-align:right;">Amount (Per Head)</th></tr></thead>
+        <tbody>
+          <tr><td style="text-align:center;">1</td><td>Down Payment</td><td>${new Date(Date.now() + 86400000).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</td><td class="text-right font-bold">${formatPHP(50000)}</td></tr>
+          <tr><td style="text-align:center;">2</td><td>Remaining Balance</td><td>90 days before travel or upon visa approval</td><td class="text-right font-bold">${formatPHP(balance)}</td></tr>
+          <tr class="total-row"><td></td><td style="font-weight:900;">TOTAL</td><td></td><td class="text-right" style="font-size:0.95rem;">${formatPHP(perHead)} /head</td></tr>
+        </tbody>
+      </table>
+      <p class="bc-vat-note">Note: The remaining balance is due 90 days before travel or upon visa approval. Visa application process starts at least 6 months before the travel date.</p>`;
+  } else {
+    const perHead = bd.grandTotal / bd.count;
+    paymentScheduleHtml = `
+      <div class="bc-section-title">Payment Schedule — Full Cash</div>
+      <table class="bc-pricing-table">
+        <thead><tr><th>#</th><th>Payment</th><th>Due Date</th><th style="text-align:right;">Amount (Per Head)</th></tr></thead>
+        <tbody>
+          <tr><td style="text-align:center;">1</td><td>Full Payment</td><td>${new Date(Date.now() + 86400000).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</td><td class="text-right font-bold">${formatPHP(perHead)}</td></tr>
+          <tr class="total-row"><td></td><td style="font-weight:900;">TOTAL</td><td></td><td class="text-right" style="font-size:0.95rem;">${formatPHP(perHead)} /head</td></tr>
+        </tbody>
+      </table>
+      <p class="bc-vat-note">Note: Full cash payment unlocks maximum savings and benefits.</p>`;
+  }
+
+  let benefitsHtml = '';
+  if (bd.paymentScheme === 'cash') {
+    benefitsHtml = `
+      <div class="bc-benefit"><span class="icon">✓</span><div><div class="title">Visa Denial Protection</div><div class="desc">100% Refund if visa is denied</div></div></div>
+      <div class="bc-benefit"><span class="icon">✓</span><div><div class="title">Visa Assistance & Appointment Fee</div><div class="desc">50% OFF (₱10,000 savings)</div></div></div>
+      <div class="bc-benefit"><span class="icon">✓</span><div><div class="title">Premium Travel Insurance</div><div class="desc">50% OFF (₱3,000 savings)</div></div></div>
+      <div class="bc-benefit"><span class="icon">✓</span><div><div class="title">Permits, City Tax & Tipping</div><div class="desc">50% OFF EUR 350</div></div></div>
+      <div class="bc-benefit"><span class="icon">✓</span><div><div class="title">Philippine Travel Tax</div><div class="desc">100% FREE (₱1,620 savings)</div></div></div>`;
+  } else if (bd.paymentScheme === 'downpayment') {
+    benefitsHtml = `
+      <div class="bc-benefit"><span class="icon">✓</span><div><div class="title">Visa Denial Protection</div><div class="desc">100% Refund if visa is denied</div></div></div>`;
+  } else {
+    benefitsHtml = `
+      <div class="bc-benefit"><span class="icon">✓</span><div><div class="title">Visa Denial Protection</div><div class="desc">100% Refund if visa is denied</div></div></div>`;
+  }
+
+  const pkgLabel = bd.packageType === 'full' ? 'Full Package (With Airfare)' : 'Land Arrangement Only';
+  const pkgRate = bd.packageType === 'full' ? '₱120,000' : '₱90,000';
+  const payLabel = bd.paymentScheme === 'installment' ? 'Monthly Installment' : bd.paymentScheme === 'downpayment' ? '₱50K Down Payment' : 'Full Cash';
+
+  document.querySelector('.header').style.display = 'none';
+  document.querySelector('.hero').style.display = 'none';
+  document.querySelector('.intro').style.display = 'none';
+  document.querySelector('.features').style.display = 'none';
+  document.querySelector('.itinerary').style.display = 'none';
+  document.querySelector('.pricing').style.display = 'none';
+  document.querySelector('.reservation').style.display = 'none';
+  document.querySelector('.footer').style.display = 'none';
+  const inclSection = document.querySelector('.inclusions-section');
+  if (inclSection) inclSection.style.display = 'none';
+  document.querySelectorAll('.modal-overlay').forEach(m => m.style.display = 'none');
+
+  const confEl = document.createElement('div');
+  confEl.className = 'booking-confirmation';
+  confEl.style.margin = '0 auto';
+  confEl.innerHTML = `
+    <div class="bc-header">
+      <div class="bc-header-top">
+        <div class="bc-header-left">
+          <img src="images/logo.jpg" alt="Discover Group">
+          <div>
+            <h2>Discover Group</h2>
+            <div class="sub">Travel Services Incorporated</div>
+          </div>
+        </div>
+        <div class="bc-header-right">
+          <div class="bc-badge">Official Booking Confirmation</div>
+          <div class="date">Issued: ${dateStr} | Ref: ${refNum}</div>
+        </div>
+      </div>
+      <div class="bc-header-contact">
+        <span>📞 0919-394-6919</span>
+        <span>📞 0960-312-3856</span>
+        <span>✉️ inquiry@discovergrp.com</span>
+        <span>🌐 discovergrp.com</span>
+      </div>
+    </div>
+    <div class="bc-body">
+      <div class="bc-section-title">Booking Confirmation — Route T Deluxe</div>
+      <div class="bc-details-grid">
+        <div class="bc-detail-item"><label>Contact Person</label><p class="highlight">${bd.allTravelers[0].firstName} ${bd.allTravelers[0].middleName || ''} ${bd.allTravelers[0].lastName}${bd.allTravelers[0].suffix && bd.allTravelers[0].suffix !== 'None' ? ' ' + bd.allTravelers[0].suffix : ''}</p></div>
+        <div class="bc-detail-item"><label>Contact Number</label><p>${bd.allTravelers[0].contact}</p></div>
+        <div class="bc-detail-item"><label>Email Address</label><p>${bd.allTravelers[0].email}</p></div>
+        <div class="bc-detail-item"><label>Date of Birth</label><p>${bd.allTravelers[0].dob ? new Date(bd.allTravelers[0].dob + 'T00:00:00').toLocaleDateString('en-US', {month:'long',day:'numeric',year:'numeric'}) : '—'}</p></div>
+        <div class="bc-detail-item"><label>Gender</label><p>${bd.allTravelers[0].gender}</p></div>
+        <div class="bc-detail-item"><label>Tour Package</label><p class="highlight">${pkgLabel}</p></div>
+        <div class="bc-detail-item"><label>Travel Date</label><p class="highlight">${bd.travelDateLabel || (TRAVEL_DATES[bd.travelDateId] ? new Date(TRAVEL_DATES[bd.travelDateId].start).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}) + ' – ' + new Date(TRAVEL_DATES[bd.travelDateId].end).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}) : bd.travelDateId)}</p></div>
+        <div class="bc-detail-item"><label>Payment Scheme</label><p>${payLabel}</p></div>
+      </div>
+      ${bd.specialRequests ? `<div class="bc-section-title">Special Requests / Notes</div>
+      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1rem 1.25rem;margin-bottom:2rem;font-size:0.9rem;color:#334155;white-space:pre-wrap;">${bd.specialRequests}</div>` : ''}
+      <div class="bc-section-title">Passenger Information</div>
+      <div style="overflow-x:auto;margin-bottom:2rem;">
+        <table class="bc-table">
+          <thead><tr><th>#</th><th>First Name</th><th>Middle</th><th>Last Name</th><th>Suffix</th><th>Gender</th><th>Contact</th><th>Email</th><th>DOB</th></tr></thead>
+          <tbody>${travelerRows}</tbody>
+        </table>
+      </div>
+      ${bd.count > 6 ? '<p style="font-size:0.75rem;color:#6b7a94;font-style:italic;margin-bottom:2rem;">Note: Details for travelers 7–' + bd.count + ' will be collected by your reservation officer.</p>' : ''}
+      <div class="bc-section-title">Package Rate & Booking Details</div>
+      <div class="bc-details-grid" style="margin-bottom:1.5rem;">
+        <div class="bc-detail-item"><label>Package</label><p>Route T Deluxe — 11 Days / 8 Nights</p></div>
+        <div class="bc-detail-item"><label>Standard Rate</label><p class="highlight">${pkgRate} per head</p></div>
+        <div class="bc-detail-item"><label>Destinations</label><p>Istanbul, Çanakkale, Pergamon, Kuşadası, Pamukkale, Konya, Cappadocia, Ankara & Bolu</p></div>
+        <div class="bc-detail-item"><label>Total Passengers</label><p>${bd.count} person(s)</p></div>
+      </div>
+      <div class="bc-section-title">Pricing Breakdown</div>
+      <div class="bc-pricing-section">
+        <div style="overflow-x:auto;">
+          <table class="bc-pricing-table">
+            <thead><tr><th>Description</th><th style="text-align:right;">Rate/Head</th><th style="text-align:center;">Pax</th><th style="text-align:right;">Total</th></tr></thead>
+            <tbody>${pricingRows}</tbody>
+          </table>
+        </div>
+        ${totalDiscount > 0 ? '<p style="margin-top:0.75rem;font-size:0.85rem;font-weight:700;color:#16a34a;">Total Savings: ' + formatPHP(totalDiscount) + '</p>' : ''}
+        <p style="margin-top:0.75rem;font-size:0.7rem;font-style:italic;color:#6b7a94;">Prices quoted are exclusive of 12% VAT. A 12% VAT will be applied upon issuance of the Official Receipt (OR).</p>
+      </div>
+      <div class="bc-section-title">Included Benefits & Discounts</div>
+      <div class="bc-benefits">${benefitsHtml}</div>
+      <div class="bc-section-title">Package Details</div>
+      <div class="bc-package-buttons" style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+        <a href="#" onclick="openDetailPopup('inclusions');return false;" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;background:#ecfdf5;border:1px solid #a7f3d0;border-radius:0.5rem;color:#16a34a;font-size:0.8rem;font-weight:700;text-decoration:none;transition:all 0.2s;">✓ Package Inclusions</a>
+        <a href="#" onclick="openDetailPopup('exclusions');return false;" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;background:#fef2f2;border:1px solid #fecaca;border-radius:0.5rem;color:#dc2626;font-size:0.8rem;font-weight:700;text-decoration:none;transition:all 0.2s;">✕ Package Exclusions</a>
+        <a href="#" onclick="openDetailPopup('optionals');return false;" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;background:#eff6ff;border:1px solid #bfdbfe;border-radius:0.5rem;color:#003e8f;font-size:0.8rem;font-weight:700;text-decoration:none;transition:all 0.2s;">◎ Optional Services</a>
+      </div>
+      <div class="bc-package-print">
+        <div style="margin-bottom:1.5rem;">
+          <h4 style="font-size:0.85rem;font-weight:800;color:#16a34a;margin-bottom:0.5rem;border-bottom:2px solid #a7f3d0;padding-bottom:0.3rem;">✓ Package Inclusions</h4>
+          <ul style="font-size:0.75rem;color:#374151;padding-left:1.2rem;margin:0;line-height:1.8;">
+            <li>Round-trip airfare (Manila–Istanbul–Manila)</li>
+            <li>Airport transfers all throughout the tour</li>
+            <li>8 nights hotel accommodation (3-star)</li>
+            <li>Full board meals (8 Breakfasts, 8 Lunches, and 8 Dinners)</li>
+            <li>Visit Istanbul, Çanakkale, Pergamon, Kuşadası, Pamukkale, Konya, Cappadocia, Ankara, and Bolu</li>
+            <li>Coach transfers all throughout the tour</li>
+            <li>Airport terminal fee</li>
+            <li>1pc 20kg check-in luggage + 1pc personal bag</li>
+          </ul>
+        </div>
+        <div style="margin-bottom:1.5rem;">
+          <h4 style="font-size:0.85rem;font-weight:800;color:#dc2626;margin-bottom:0.5rem;border-bottom:2px solid #fecaca;padding-bottom:0.3rem;">✕ Package Exclusions</h4>
+          <ul style="font-size:0.75rem;color:#374151;padding-left:1.2rem;margin:0;line-height:1.8;">
+            <li>Mandatory Permits and City Tax in Turkey including compulsory tipping for driver, tour coordinator/guide for the entire trip: EUR 350/head</li>
+            <li>Philippine Travel Tax: PHP 1,620/head</li>
+          </ul>
+        </div>
+        <div style="margin-bottom:1.5rem;">
+          <h4 style="font-size:0.85rem;font-weight:800;color:#003e8f;margin-bottom:0.5rem;border-bottom:2px solid #bfdbfe;padding-bottom:0.3rem;">◎ Optional Services</h4>
+          <ul style="font-size:0.75rem;color:#374151;padding-left:1.2rem;margin:0;line-height:1.8;">
+            <li>Visa assistance fee & appointment fee: PHP 20,000/pax</li>
+            <li>Visa Fee: EUR 90/head (subject to change without prior notice)</li>
+            <li>Travel Insurance: PHP 6,000/pax</li>
+            <li>Admission Fee / Activity Fee</li>
+            <li>Hotel room upgrade (subject to availability)</li>
+            <li>Extra luggage allowance (airline rates apply)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bc-separator"></div>
+      <div class="bc-section-title">Official Bank Accounts</div>
+      <p style="font-size:0.75rem;color:#6b7a94;margin-bottom:1rem;">All payments must be made exclusively to the Company's official bank accounts below. Payments to unauthorized accounts will not be recognized.</p>
+      <div class="bc-bank-grid">
+        <div class="bc-bank-card">
+          <div class="bank-name">BPI</div>
+          <div class="bank-full">Bank of the Philippine Islands</div>
+          <div class="bank-acct-name">Discover Group of Travel Services Inc.</div>
+          <div class="bank-number">1491 0000 38</div>
+        </div>
+        <div class="bc-bank-card">
+          <div class="bank-name">UNIONBANK</div>
+          <div class="bank-full">Union Bank of the Philippines</div>
+          <div class="bank-acct-name">Discover Group of Travel Services Inc.</div>
+          <div class="bank-number">0017 8000 3393</div>
+        </div>
+        <div class="bc-bank-card">
+          <div class="bank-name">MAYBANK</div>
+          <div class="bank-full">Maybank Philippines</div>
+          <div class="bank-acct-name">Discover Group of Travel Services Inc.</div>
+          <div class="bank-number">0011 4500 0780</div>
+        </div>
+      </div>
+      <div class="bc-separator"></div>
+      <div class="bc-payment-schedule">${paymentScheduleHtml}</div>
+      <div class="bc-separator"></div>
+      <div class="bc-section-title">Important Reminders</div>
+      <div style="font-size:0.75rem;color:#374151;line-height:1.8;margin-bottom:2rem;">
+        <p style="margin-bottom:0.5rem;"><strong>Visa Denial Protection:</strong> In the event of a visa denial, a 100% refund of the tour package payment will be processed within 180 banking days from the date of written acknowledgment.</p>
+        <p style="margin-bottom:0.5rem;"><strong>Payment Terms:</strong> Billing starts upon initial payment or signing of the booking confirmation. Late installment payments may incur penalties.</p>
+        <p style="margin-bottom:0.5rem;"><strong>Age-Based Discounts:</strong> Senior (60+) and Child (2–5) receive ₱5,000 off per head. Infants (0–23 months) are charged a flat ₱50,000. Age is computed based on the tour end date.</p>
+        <p><strong>Cancellation:</strong> Cancellations within 90 days of departure are subject to a non-refundable fee of PHP 30,000 per head.</p>
+      </div>
+      <div class="bc-separator"></div>
+      <div class="bc-tc-container">
+        <div class="bc-section-title">Terms and Conditions</div>
+        <div class="bc-tc-scroll" id="tcScrollBox">
+          <p>These Terms and Conditions ("Agreement") govern your use of the travel services provided by Discover Group ("Discover," "we," or "our"). By accessing or using our services, you agree to be bound by these terms. Please read this Agreement carefully before proceeding.</p>
+          <h3>Definitions</h3>
+          <p>"Discover Group" refers to the travel services provided by our company.</p>
+          <p>"Customer(s)," "passenger", "client", "you," or "your" refers to any individual or entity using our travel services.</p>
+          <p>"Service(s)" refers to the travel services, including but not limited to flight bookings, hotel reservations, car rentals, vacation packages, and travel insurance, provided by Discover Group.</p>
+          <h3>Booking and Reservations</h3>
+          <p>By using our services, you acknowledge that Discover Group acts as an intermediary between you and various travel service providers (e.g., airlines, hotels, car rental companies), and your bookings and reservations are subject to the terms and conditions of these providers.</p>
+          <p>The contact person is the one responsible for the package of all participants listed above.</p>
+          <p>All bookings and reservations made through Discover Group are subject to availability and confirmation by the relevant travel service providers.</p>
+          <p>You are responsible for providing accurate and complete information during the booking process. Discover Group is not liable for any errors or consequences arising from inaccurate or incomplete information provided by you.</p>
+          <p>Changes or cancellations to bookings may be subject to fees imposed by the travel service providers. You agree to comply with their terms and conditions regarding changes, cancellations, refunds, and other related policies.</p>
+          <p>By using our services, you acknowledge that certain bookings, such as airline tickets and hotel reservations, may be non-refundable and non-rebookable. Once these bookings are made, they cannot be refunded or changed, and no cash surrender value will be provided.</p>
+          <p>Promotions may not be the same for every client. Applicable differences may apply depending on the promotion period of the availed package, number of pax, season and other factors affecting prices of supplies.</p>
+          <p>All confirmed optional tours by clients are non-refundable, non-transferrable and non-rebookable.</p>
+          <p>All discounts and complimentary inclusions are subject to specified deadlines. Failure to avail of these within the given period will result in forfeiture, without extension or compensation.</p>
+          <h3>Prior Agreements, Amendments & Non-Waiver</h3>
+          <p>This agreement supersedes all previous consideration, understanding, oral or written, agreements and contracts entered into by the parties. No Amendment to this agreement shall be made unless new booking confirmation is issued.</p>
+          <h3>Accommodation</h3>
+          <p>All accommodation in Turkey are based on a 3 star hotel category. In case of unavailability, price increase, or other factors, the company reserves the right to choose any hotel with the same category without prior notice.</p>
+          <p>Any request for room upgrade or transfer to another hotel is subject to availability and any rate difference or additional expenses resulting to said request will be shouldered by the client.</p>
+          <p>Some hotel charges key deposit before check-in and will return it to client before check-out. This is not included in the package and client must shoulder the said expense.</p>
+          <h3>Itinerary</h3>
+          <p>The daily schedule provided is just a guide and may still vary or be subject to change due to weather conditions, traveling pace, water current, fortuitous event, prices increased and other unforeseen circumstances.</p>
+          <p>All places listed in the itinerary will not be interchanged with any other destination, location, or activity unless necessary without prior notice.</p>
+          <p>Itinerary may interchange including but not limited to point of entry and exit depending on availability of flights, hotels, attractions, and other factors.</p>
+          <h3>Airline Ticket</h3>
+          <p>Airline Ticket is non-refundable, non-transferable, and any rebooking request is subject to rebooking penalty and fare difference. Availability of new preferred flight is also not guaranteed.</p>
+          <p>Discover Group reserves the right to change airline depending on availability, schedule preference, and budget restrictions.</p>
+          <p>Guests who do not pass check-in process/requirement will not be able to refund any unused part of the trip.</p>
+          <p>Lay-over or connecting flight from point of origin to point of destination may take up to 24 hours.</p>
+          <p>For land arrangements, Php 30,000 will be deducted to the package rate. The guests will meet the group directly at the first hotel of the group.</p>
+          <h3>Travel Documents and Requirements</h3>
+          <p>It is your responsibility to ensure that you have valid travel documents, such as passports, visas, health certificates, and travel authority for government employees required for your travel. Discover Group is not responsible for any consequences arising from your failure to obtain or comply with the necessary travel documents.</p>
+          <h3>Travel Insurance</h3>
+          <p>We strongly recommend that you obtain travel insurance to protect yourself against unforeseen circumstances, such as trip cancellations, medical emergencies, or lost luggage.</p>
+          <h3>Limitation of Liability</h3>
+          <p>Discover Group acts as an intermediary and does not assume any liability for the acts, omissions, errors, delays, or negligence of the travel service providers.</p>
+          <p>In no event shall Discover Group be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with the use of our services.</p>
+          <h3>Limitation of Liability - Immigration</h3>
+          <p>Discover Group of Travel Services shall not be held responsible for any immigration issues, offloading, or similar incidents experienced by the passenger.</p>
+          <p>Discover Group will not be held responsible for rebooking or refunding any amount from purchased tour packages if a passenger is unable to proceed with the tour due to immigration issues.</p>
+          <h3>Visa Processing</h3>
+          <p>Visa result must be released 90 days prior departure. In the event that visa is not yet released, rebooking should be made for a fee of Php 10,000 per person and travel date must be at least 180 days from the time of rebooking.</p>
+          <p>All costs related to visa processing will not be refundable, transferrable and convertible to cash.</p>
+          <p>Visa processing may start as early as 180 days prior departure.</p>
+          <p>Visa approval cannot be guaranteed. When visa is not granted, the reasons of denial will not be disclosed. Discover Group is not responsible for visa result.</p>
+          <h3>Cancellation Fee</h3>
+          <p>For any kind of voluntary cancellations, following cancellation charges will apply:</p>
+          <p class="indent">&gt;90 days prior departure - Php 30,000</p>
+          <p class="indent">&lt;90 days - Forfeiture of payment</p>
+          <p>Once Discover Group visa application process started, all payments are already non-refundable.</p>
+          <h3>Visa Refusal</h3>
+          <p>In case of visa refusal, Discover Group has the right to demand a copy of refusal letter to proceed with the succeeding arrangements.</p>
+          <p>In case of visa refusal, full payment made will be fully refundable 180 banking days from the time of refund acknowledgement given that all conditions are met.</p>
+          <h3>Payment and Cancellation</h3>
+          <p>Billing start date shall be upon signing of Booking Confirmation. In the absence of signed Booking confirmation, service shall be deemed automatically accepted upon initial payment together with the terms and conditions.</p>
+          <p class="bold">Installment Payment:</p>
+          <p>Please deposit the required down payment to temporarily hold your reservation. Your booking is only guaranteed once payment deadline is met. Failure to meet monthly deadline is subject to late penalty fee and may result to booking cancellation.</p>
+          <p>Late penalty fee will be applied for participants who settled payment after agreed payment deadline:</p>
+          <p class="indent">A. 1-15 days after due date: Php 1,000/person</p>
+          <p class="indent">B. 16-30 days after due date: Php 2,000/person</p>
+          <p class="indent">C. 31-45 days after due date: Php 3,000/person</p>
+          <p class="indent">D. 46-60 days after due date: Php 5,000/person</p>
+          <p class="indent">E. 61 days onwards will lead to automatic cancellation of booking</p>
+          <p class="bold">Value Added Tax:</p>
+          <p>All quoted rates are exclusive of the twelve percent (12%) Value-Added Tax (VAT) and any other relevant taxes.</p>
+          <h3>Age-Based Discounts and Special Rates</h3>
+          <p>Discover Group extends preferential pricing to qualified travelers based on age classification at the time of travel:</p>
+          <p class="indent">a. Senior Citizen (60 years of age or older at the time of travel start): ₱5,000 discount per head</p>
+          <p class="indent">b. Child (2 to 5 years of age at the time of travel end): ₱5,000 discount per head</p>
+          <p class="indent">c. Infant (0 to 23 months at the time of travel end): Flat rate of ₱50,000 per head</p>
+        </div>
+      </div>
+      <div class="bc-agreement" id="bcAgreementBox">
+        <label>
+          <input type="checkbox" id="bcAcceptTerms" onchange="handleTermsCheck(this)">
+          <span>I, <strong>${bd.allTravelers[0].firstName} ${bd.allTravelers[0].lastName}</strong>, have read, understood, and agree to all the Terms and Conditions stated above. I confirm that all information provided is accurate and I authorize Discover Group to process my booking for Route T Deluxe.</span>
+        </label>
+      </div>
+      <div class="bc-separator"></div>
+      <div class="bc-signature-section">
+        <div class="bc-section-title">${isAgentReviewMode ? 'Consultant Approval Signature' : 'Client Signature'}</div>
+        <p class="bc-signature-intro">${isAgentReviewMode ? 'As the assigned travel consultant, please review the booking details above and sign below to confirm your approval.' : 'Please sign below to confirm your booking. Your signature indicates that you have read, understood, and agreed to all terms and conditions.'}</p>
+        <div class="bc-signature-grid">
+          <div class="bc-sig-box">
+            <div class="bc-sig-label">${isAgentReviewMode ? 'Consultant Signature' : 'Client Signature'}</div>
+            <div class="bc-sig-canvas-wrap" id="sigCanvasWrap">
+              ${isAgentReviewMode && bd.clientSignature ? `<img src="${bd.clientSignature}" style="width:100%;height:100%;object-fit:contain;" alt="Client Signature" />` : `<canvas id="sigCanvas"></canvas><div class="bc-sig-placeholder" id="sigPlaceholder">Sign here</div>`}
+            </div>
+            ${!isAgentReviewMode ? '<div class="bc-sig-actions"><button class="bc-sig-clear" onclick="clearSignature()">Clear</button></div>' : ''}
+            <div class="bc-sig-info">
+              <div class="name">${bd.allTravelers[0].firstName} ${bd.allTravelers[0].lastName}</div>
+              <div class="date">${dateStr}</div>
+            </div>
+          </div>
+          <div class="bc-sig-box">
+            <div class="bc-sig-label">${isAgentReviewMode ? 'Approved By' : 'Travel Consultant'}</div>
+            ${isAgentReviewMode ? `<div class="bc-sig-canvas-wrap" id="sigCanvasWrap"><canvas id="sigCanvas"></canvas><div class="bc-sig-placeholder" id="sigPlaceholder">Sign here to approve</div></div><div class="bc-sig-actions"><button class="bc-sig-clear" onclick="clearSignature()">Clear</button></div>` : `<div class="bc-sig-consultant"><p>For Discover Group use only</p></div>`}
+            <div class="bc-sig-info">
+              <div class="name">${bd.travelConsultant || 'Travel Consultant'}</div>
+              <div class="date">Discover Group of Travel Services Inc.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bc-submit-section">
+        <button class="bc-submit-btn" id="bcSubmitBtn" onclick="submitSignedConfirmation()" disabled>
+          ${isAgentReviewMode ? '✓ Approve & Submit Confirmation' : '✓ Submit Signed Booking Confirmation'}
+        </button>
+        <div class="bc-submit-status pending" id="bcSubmitStatus">Please accept the terms and sign above to submit</div>
+      </div>
+      <div class="bc-actions">
+        <button class="btn-print" id="bcPrintBtn" onclick="window.print()" disabled style="opacity:0.5;cursor:not-allowed;">🖨️ Print / Save as PDF</button>
+        <button class="btn-new" onclick="window.location.href=window.location.pathname">← New Reservation</button>
+      </div>
+    </div>
+    <div class="bc-footer">
+      <p class="company">Discover Group of Travel Services Incorporated</p>
+      <p>📍 22nd Floor, The Upper Class Tower, Quezon Ave & Sct. Reyes Corner, Diliman, Quezon City</p>
+      <p>📞 0919-394-6919 | ✉️ inquiry@discovergrp.com | 🌐 discovergrp.com</p>
+      <p>Reference: ${refNum}</p>
+    </div>
+  `;
+  document.body.appendChild(confEl);
+
+  // Initialize signature canvas
+  let signatureCanvas = null;
+  let signatureCtx = null;
+  let isDrawing = false;
+  let hasSigned = false;
+
+  function initSignatureCanvas() {
+    signatureCanvas = document.getElementById('sigCanvas');
+    if (!signatureCanvas) return;
+    signatureCanvas.width = signatureCanvas.offsetWidth || 400;
+    signatureCanvas.height = 120;
+    signatureCtx = signatureCanvas.getContext('2d');
+    signatureCtx.strokeStyle = '#002d6b';
+    signatureCtx.lineWidth = 2;
+    signatureCtx.lineCap = 'round';
+    signatureCtx.lineJoin = 'round';
+    signatureCanvas.addEventListener('mousedown', startDraw);
+    signatureCanvas.addEventListener('mousemove', draw);
+    signatureCanvas.addEventListener('mouseup', endDraw);
+    signatureCanvas.addEventListener('mouseleave', endDraw);
+    signatureCanvas.addEventListener('touchstart', function(e) { e.preventDefault(); const touch = e.touches[0]; signatureCanvas.dispatchEvent(new MouseEvent('mousedown', { clientX: touch.clientX, clientY: touch.clientY })); });
+    signatureCanvas.addEventListener('touchmove', function(e) { e.preventDefault(); const touch = e.touches[0]; signatureCanvas.dispatchEvent(new MouseEvent('mousemove', { clientX: touch.clientX, clientY: touch.clientY })); });
+    signatureCanvas.addEventListener('touchend', function(e) { e.preventDefault(); signatureCanvas.dispatchEvent(new MouseEvent('mouseup')); });
+  }
+
+  function startDraw(e) {
+    isDrawing = true;
+    const rect = signatureCanvas.getBoundingClientRect();
+    signatureCtx.beginPath();
+    signatureCtx.moveTo(e.clientX - rect.left, e.clientY - rect.top);
+  }
+  function draw(e) {
+    if (!isDrawing) return;
+    const rect = signatureCanvas.getBoundingClientRect();
+    signatureCtx.lineTo(e.clientX - rect.left, e.clientY - rect.top);
+    signatureCtx.stroke();
+    if (!hasSigned) {
+      hasSigned = true;
+      const placeholder = document.getElementById('sigPlaceholder');
+      if (placeholder) placeholder.style.display = 'none';
+      document.getElementById('sigCanvasWrap').classList.add('has-signature');
+      updateSubmitState();
+    }
+  }
+  function endDraw() { isDrawing = false; }
+
+  window.clearSignature = function() {
+    if (!signatureCanvas || !signatureCtx) return;
+    signatureCtx.clearRect(0, 0, signatureCanvas.width, signatureCanvas.height);
+    hasSigned = false;
+    const placeholder = document.getElementById('sigPlaceholder');
+    if (placeholder) placeholder.style.display = 'block';
+    document.getElementById('sigCanvasWrap').classList.remove('has-signature');
+    updateSubmitState();
+  };
+
+  window.handleTermsCheck = function(checkbox) {
+    const box = document.getElementById('bcAgreementBox');
+    if (checkbox.checked) { box.classList.add('checked'); } else { box.classList.remove('checked'); }
+    updateSubmitState();
+  };
+
+  function updateSubmitState() {
+    const termsChecked = document.getElementById('bcAcceptTerms') && document.getElementById('bcAcceptTerms').checked;
+    const btn = document.getElementById('bcSubmitBtn');
+    const status = document.getElementById('bcSubmitStatus');
+    const printBtn = document.getElementById('bcPrintBtn');
+    if (termsChecked && hasSigned) {
+      btn.disabled = false;
+      if (printBtn) { printBtn.disabled = false; printBtn.style.opacity = '1'; printBtn.style.cursor = 'pointer'; }
+      status.className = 'bc-submit-status ready';
+      status.textContent = isAgentReviewMode ? '✓ Signed — ready to approve' : '✓ Signed — ready to submit';
+    } else {
+      btn.disabled = true;
+      if (printBtn) { printBtn.disabled = true; printBtn.style.opacity = '0.5'; printBtn.style.cursor = 'not-allowed'; }
+      status.className = 'bc-submit-status pending';
+      if (!termsChecked && !hasSigned) {
+        status.textContent = isAgentReviewMode ? 'Please accept the terms and sign above to approve' : 'Please accept the terms and sign above to submit';
+      } else if (!termsChecked) {
+        status.textContent = 'Please accept the terms and conditions above';
+      } else {
+        status.textContent = isAgentReviewMode ? 'Please sign above to approve this booking' : 'Please sign above to submit your booking confirmation';
+      }
+    }
+  }
+
+  setTimeout(initSignatureCanvas, 100);
+}
+
+window.submitSignedConfirmation = async function() {
+  const btn = document.getElementById('bcSubmitBtn');
+  const status = document.getElementById('bcSubmitStatus');
+  btn.disabled = true;
+  btn.innerHTML = '⏳ Submitting...';
+
+  const sigCanvas = document.getElementById('sigCanvas');
+  const sigDataUrl = sigCanvas ? sigCanvas.toDataURL('image/png') : '';
+
+  if (!isAgentReviewMode) {
+    lastBookingData.clientSignature = sigDataUrl;
+    lastBookingData.compressedSignature = await compressSignature(sigDataUrl);
+  } else {
+    lastBookingData.consultantSignature = sigDataUrl;
+  }
+
+  const formData = new FormData();
+  formData.append('access_key', '7332ba6f-c90e-4d55-ac88-cf63c72e4e48');
+  const clientName = lastBookingData ? lastBookingData.allTravelers[0].firstName + ' ' + lastBookingData.allTravelers[0].lastName : 'Client';
+  if (isAgentReviewMode) {
+    formData.append('subject', 'CONSULTANT APPROVED - ' + clientName + ' (by ' + (lastBookingData.travelConsultant || 'Agent') + ')');
+    formData.append('from_name', 'Route T Deluxe - Consultant Approval');
+  } else {
+    formData.append('subject', 'SIGNED Booking Confirmation - ' + clientName);
+    formData.append('from_name', 'Route T Deluxe - Signed Confirmation');
+  }
+  formData.append('Booking_Reference', document.querySelector('.bc-footer p:last-child') ? document.querySelector('.bc-footer p:last-child').textContent : '');
+  formData.append('Client_Name', lastBookingData ? lastBookingData.allTravelers[0].firstName + ' ' + (lastBookingData.allTravelers[0].middleName || '') + ' ' + lastBookingData.allTravelers[0].lastName : '');
+  formData.append('Terms_Accepted', isAgentReviewMode ? 'Yes - Consultant reviewed and approved' : 'Yes - Client accepted all Terms & Conditions');
+  formData.append('Signature_Provided', isAgentReviewMode ? 'Yes - Consultant digital signature captured' : 'Yes - Client digital signature captured');
+  if (isAgentReviewMode && lastBookingData.travelConsultant) {
+    formData.append('Approved_By', lastBookingData.travelConsultant);
+  }
+  formData.append('Date_Signed', new Date().toLocaleString('en-US', { timeZone: 'Asia/Manila' }));
+  if (!isAgentReviewMode) {
+    formData.append('Review_Approve_Link', generateBookingLink());
+  }
+  const bd = lastBookingData;
+  const travelerList = bd.allTravelers.map((t, i) => `${i+1}. ${t.firstName} ${t.middleName || ''} ${t.lastName}${t.suffix && t.suffix !== 'None' ? ' ' + t.suffix : ''} (${t.gender}, DOB: ${t.dob}, Contact: ${t.contact}, Email: ${t.email})`).join('\n');
+  const pricingList = bd.classified.map(c => `${c.name || c.category}: ₱${c.finalRate.toLocaleString()}`).join('\n');
+  formData.append('Travel_Date', bd.travelDateLabel || bd.travelDateId);
+  formData.append('Package_Type', bd.packageType === 'full' ? 'Full Package (With Airfare)' : 'Land Package Only');
+  formData.append('Payment_Scheme', bd.paymentScheme === 'installment' ? 'Monthly Installment' : bd.paymentScheme === 'downpayment' ? '50K Downpayment' : 'Full Cash Payment');
+  formData.append('Total_Passengers', String(bd.count));
+  formData.append('Grand_Total', '₱' + bd.grandTotal.toLocaleString());
+  formData.append('All_Travelers', travelerList);
+  formData.append('Pricing_Breakdown', pricingList);
+  formData.append('Contact_Email', bd.allTravelers[0].email);
+  formData.append('Contact_Number', bd.allTravelers[0].contact);
+
+  fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData })
+    .then(r => r.json()).then(data => { onSubmitSuccess(); }).catch(err => { onSubmitSuccess(); });
+
+  function onSubmitSuccess() {
+    status.className = 'bc-submit-status ready';
+    status.textContent = '✓ Booking confirmation submitted successfully!';
+    btn.innerHTML = '✅ Submitted';
+    btn.style.background = '#16a34a';
+    showToast(isAgentReviewMode ? 'Consultant approval submitted to inquiry@discovergrp.com!' : 'Signed booking confirmation sent to inquiry@discovergrp.com!', 'success');
+    if (isAgentReviewMode) {
+      const canvasWrap = document.getElementById('sigCanvasWrap');
+      if (canvasWrap && sigDataUrl) {
+        canvasWrap.innerHTML = `<img src="${sigDataUrl}" style="width:100%;height:100%;object-fit:contain;" alt="Consultant Signature" />`;
+      }
+    }
+    const printBtn = document.getElementById('bcPrintBtn');
+    if (printBtn) { printBtn.disabled = false; printBtn.style.opacity = '1'; printBtn.style.cursor = 'pointer'; }
+  }
+};
+
+// ==================== COUNTDOWN TIMER ====================
+function updateCountdown() {
+  const target = new Date('2026-12-11T00:00:00+08:00').getTime();
+  const now = Date.now();
+  const diff = Math.max(0, target - now);
+  const days = Math.floor(diff / (1000*60*60*24));
+  const hours = Math.floor((diff/(1000*60*60))%24);
+  const mins = Math.floor((diff/(1000*60))%60);
+  const secs = Math.floor((diff/1000)%60);
+  const daysEl = document.getElementById('cd-days');
+  const hoursEl = document.getElementById('cd-hours');
+  const minsEl = document.getElementById('cd-mins');
+  const secsEl = document.getElementById('cd-secs');
+  if (daysEl) daysEl.textContent = String(days).padStart(2,'0');
+  if (hoursEl) hoursEl.textContent = String(hours).padStart(2,'0');
+  if (minsEl) minsEl.textContent = String(mins).padStart(2,'0');
+  if (secsEl) secsEl.textContent = String(secs).padStart(2,'0');
+}
+setInterval(updateCountdown, 1000);
+
+// ==================== MODALS ====================
+function openModal(id) { document.getElementById(id).classList.add('active'); document.body.style.overflow = 'hidden'; }
+function closeModal(id) { document.getElementById(id).classList.remove('active'); document.body.style.overflow = ''; }
+function closeModalOutside(e) { if (e.target === e.currentTarget) { e.target.classList.remove('active'); document.body.style.overflow = ''; } }
+
+document.addEventListener('DOMContentLoaded', () => {
+  initItinerary();
+  recalculate();
+  updateCountdown();
+  updateFreebies();
+  checkBookingUrl();
+});
+
+// ==================== DRAGGABLE DETAIL POPUP ====================
+const DETAIL_CONTENT = {
+  inclusions: {
+    title: '✓ Package Inclusions',
+    color: 'green',
+    items: [
+      'Round-trip airfare (Manila–Istanbul–Manila)',
+      'Airport transfers all throughout the tour',
+      '8 nights hotel accommodation (3-star)',
+      'Full board meals (8 Breakfasts, 8 Lunches, and 8 Dinners)',
+      'Visit Istanbul, Çanakkale, Pergamon, Kuşadası, Pamukkale, Konya, Cappadocia, Ankara, and Bolu',
+      'Coach transfers all throughout the tour',
+      'Airport terminal fee',
+      '1pc 20kg check-in luggage + 1pc personal bag'
+    ]
+  },
+  exclusions: {
+    title: '✕ Package Exclusions',
+    color: 'red',
+    items: [
+      'Mandatory Permits and City Tax in Turkey including compulsory tipping for driver, tour coordinator/guide for the entire trip: EUR 350/head',
+      'Philippine Travel Tax: PHP 1,620/head'
+    ]
+  },
+  optionals: {
+    title: '◎ Optional Services',
+    color: 'blue',
+    items: [
+      'Visa assistance fee & appointment fee: PHP 20,000/pax',
+      'Visa Fee: EUR 90/head (subject to change without prior notice)',
+      'Travel Insurance: PHP 6,000/pax',
+      'Admission Fee / Activity Fee',
+      'Hotel room upgrade (subject to availability)',
+      'Extra luggage allowance (airline rates apply)'
+    ]
+  }
+};
+
+function openDetailPopup(type) {
+  const data = DETAIL_CONTENT[type];
+  if (!data) return;
+  let overlay = document.getElementById('detailPopupOverlay');
+  if (overlay) overlay.remove();
+  const icon = type === 'inclusions' ? '✓' : type === 'exclusions' ? '✕' : '◎';
+  const itemsHtml = data.items.map(item =>
+    `<div class="list-item"><span class="icon ${data.color}">${icon}</span><span>${item}</span></div>`
+  ).join('');
+  overlay = document.createElement('div');
+  overlay.id = 'detailPopupOverlay';
+  overlay.className = 'detail-popup-overlay';
+  overlay.innerHTML = `
+    <div class="detail-popup" id="detailPopup">
+      <div class="detail-popup-header ${data.color}" id="detailPopupHeader">
+        <h3>${data.title}</h3>
+        <button class="close-btn" onclick="closeDetailPopup()">&times;</button>
+      </div>
+      <div class="detail-popup-body">${itemsHtml}</div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  requestAnimationFrame(() => overlay.classList.add('active'));
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeDetailPopup(); });
+  makeDraggable(document.getElementById('detailPopup'), document.getElementById('detailPopupHeader'));
+}
+
+function closeDetailPopup() {
+  const overlay = document.getElementById('detailPopupOverlay');
+  if (overlay) { overlay.classList.remove('active'); setTimeout(() => overlay.remove(), 200); }
+}
+
+function makeDraggable(element, handle) {
+  let isDragging = false;
+  let startX, startY, initialLeft, initialTop;
+  handle.addEventListener('mousedown', startDrag);
+  handle.addEventListener('touchstart', startDrag, { passive: false });
+  function startDrag(e) {
+    isDragging = true;
+    const rect = element.getBoundingClientRect();
+    element.style.left = rect.left + 'px';
+    element.style.top = rect.top + 'px';
+    element.style.margin = '0';
+    if (e.type === 'touchstart') { startX = e.touches[0].clientX; startY = e.touches[0].clientY; }
+    else { startX = e.clientX; startY = e.clientY; }
+    initialLeft = rect.left; initialTop = rect.top;
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', stopDrag);
+    document.addEventListener('touchmove', drag, { passive: false });
+    document.addEventListener('touchend', stopDrag);
+    e.preventDefault();
+  }
+  function drag(e) {
+    if (!isDragging) return;
+    let currentX, currentY;
+    if (e.type === 'touchmove') { currentX = e.touches[0].clientX; currentY = e.touches[0].clientY; }
+    else { currentX = e.clientX; currentY = e.clientY; }
+    element.style.left = (initialLeft + currentX - startX) + 'px';
+    element.style.top = (initialTop + currentY - startY) + 'px';
+    e.preventDefault();
+  }
+  function stopDrag() {
+    isDragging = false;
+    document.removeEventListener('mousemove', drag);
+    document.removeEventListener('mouseup', stopDrag);
+    document.removeEventListener('touchmove', drag);
+    document.removeEventListener('touchend', stopDrag);
+  }
+}
+</script>
+</body>
+</html>
