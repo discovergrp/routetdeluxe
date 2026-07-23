@@ -261,30 +261,30 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
 .toggle-group { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
 .toggle-group-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
 @media(max-width:480px) { .toggle-group-3 { grid-template-columns: 1fr; } }
-.toggle-option { border: 2px solid var(--border); border-radius: 0.75rem; padding: 1rem; cursor: pointer; transition: all 0.2s; text-align: center; }
+.toggle-option { background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem 1rem; cursor: pointer; transition: all 0.2s; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
 .toggle-option:hover { border-color: var(--primary); background: rgba(0,62,143,0.03); }
-.toggle-option.active { border-color: var(--primary); background: rgba(0,62,143,0.05); }
-.toggle-title { font-size: 0.85rem; font-weight: 700; color: var(--primary); }
+.toggle-option.active { border: 2px solid var(--primary); background: #f0f4ff; }
+.toggle-title { font-size: 0.9rem; font-weight: 700; color: var(--primary); }
 .toggle-sub { font-size: 0.7rem; color: var(--muted); margin-top: 0.2rem; }
 .toggle-price { font-size: 1.1rem; font-weight: 900; color: var(--primary); margin-top: 0.3rem; font-family: 'Inter', sans-serif; }
-.installment-preview { background: #f8faff; border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem; display: none; }
-.installment-preview h4 { font-size: 0.85rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; font-family: 'Inter', sans-serif; }
-.installment-preview .note { font-size: 0.8rem; color: var(--muted); margin-bottom: 1rem; }
-.installment-row { display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+.installment-preview { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem; display: none; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.installment-preview h4 { font-size: 0.9rem; font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; color: #1a2744; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+.installment-preview .note { font-size: 0.78rem; color: #4b5a7a; margin-bottom: 1rem; line-height: 1.6; }
+.installment-row { display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0; border-bottom: 1px solid #f1f5f9; font-size: 0.82rem; }
 .installment-row:last-child { border-bottom: none; }
-.installment-row .date { color: var(--muted); }
-.installment-row .amount { font-weight: 700; color: var(--primary); }
-.installment-row.total { font-weight: 800; border-top: 2px solid var(--primary); margin-top: 0.5rem; padding-top: 0.5rem; }
-.installment-row.total .date { color: var(--primary); }
-.installment-row.total .amount { color: var(--primary); font-size: 1rem; }
-.installment-divider { height: 1px; background: var(--border); margin: 0.75rem 0; }
-.installment-sub-header { font-size: 0.8rem; font-weight: 700; color: var(--primary); padding: 0.3rem 0; }
-.discount-breakdown { background: rgba(0,62,143,0.03); border: 1px solid rgba(0,62,143,0.1); border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 0.75rem; }
-.discount-breakdown-title { font-size: 0.75rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
-.discount-row { display: flex; justify-content: space-between; font-size: 0.8rem; padding: 0.2rem 0; color: var(--muted); }
+.installment-row .date { color: #374151; }
+.installment-row .amount { font-weight: 700; color: #1a2744; }
+.installment-row.total { font-weight: 800; border-top: 2px solid #1a2744; border-bottom: none; margin-top: 0.5rem; padding-top: 0.75rem; color: #1a2744; font-size: 0.9rem; }
+.installment-row.total .date { color: #1a2744; font-size: 0.9rem; }
+.installment-row.total .amount { color: #1a2744; font-size: 0.9rem; }
+.installment-divider { height: 1px; background: #e2e8f0; margin: 0.75rem 0; }
+.installment-sub-header { font-size: 0.82rem; font-weight: 700; color: #1a2744; padding: 0.3rem 0; }
+.discount-breakdown { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.5rem; padding: 0.85rem 1rem; margin-bottom: 0.75rem; }
+.discount-breakdown-title { font-size: 0.78rem; font-weight: 700; color: #1a2744; margin-bottom: 0.5rem; }
+.discount-row { display: flex; justify-content: space-between; font-size: 0.8rem; padding: 0.25rem 0; color: #374151; }
 .badge { display: inline-block; font-size: 0.65rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 0.3rem; margin-left: 0.25rem; }
-.badge-infant { background: #fef3c7; color: #92400e; }
-.badge-child { background: #dbeafe; color: #1e40af; }
+.badge-infant { background: #ede9fe; color: #5b21b6; }
+.badge-child { background: #d1fae5; color: #065f46; }
 .badge-senior { background: #f3e8ff; color: #6b21a8; }
 .pricing-summary { background: #f8faff; border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem; }
 .pricing-summary h4 { font-size: 0.85rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; font-family: 'Inter', sans-serif; }
@@ -1199,7 +1199,7 @@ function renderInstallmentPreview(total, travelDateId, classified) {
 
   if (selectedPayment === 'downpayment') {
     previewEl.style.display = 'block';
-    let html = `<h4>💳 Down Payment Scheme</h4>`;
+    let html = `<h4>💳 <em>Down Payment Scheme</em></h4>`;
     html += `<div class="note">Secure your slot with ₱50,000 down payment per head. The remaining balance must be settled not later than 90 days before travel date or upon release of your visa result.</div>`;
     html += buildDiscountBreakdown(classified);
     const perHead = total / count;
@@ -1212,6 +1212,15 @@ function renderInstallmentPreview(total, travelDateId, classified) {
     return;
   }
 
+  if (selectedPayment === 'cash') {
+    previewEl.style.display = 'block';
+    const perHead = total / count;
+    let html = `<h4>💵 <em>Full Cash Payment</em></h4>`;
+    html += `<div class="note">Pay the full amount upon reservation and secure your slot immediately.</div>`;
+    html += `<div class="installment-row total"><span class="date">Full Payment (per head)</span><span class="amount">${formatPHP(perHead)}</span></div>`;
+    previewEl.innerHTML = html;
+    return;
+  }
   if (selectedPayment !== 'installment') {
     previewEl.style.display = 'none';
     return;
@@ -1237,7 +1246,7 @@ function renderInstallmentPreview(total, travelDateId, classified) {
   if (months < 1) months = 1;
 
   const hasDiscounts = classified && classified.some(p => p.category !== 'adult');
-  let html = `<h4>📅 Your Installment Plan (${months} months)</h4>`;
+  let html = `<h4>📅 <em>Your Installment Plan (${months} months)</em></h4>`;
   html += `<div class="note">Fully paid 3 months before departure. Monthly payments divided equally:</div>`;
 
   if (hasDiscounts) {
